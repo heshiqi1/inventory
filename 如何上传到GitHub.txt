@@ -1,0 +1,182 @@
+========================================
+📤 如何上传项目到 GitHub
+========================================
+
+你的项目已准备就绪! 以下是上传步骤:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ 已完成的准备工作:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ✅ 创建了 .gitignore (排除大文件和敏感文件)
+2. ✅ 创建了 README.md (详细的项目说明)
+3. ✅ 脱敏了企业微信 Webhook URL
+4. ✅ 创建了上传脚本 git_upload.bat
+5. ✅ 创建了详细的上传指南
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 推荐方法: 使用 GitHub Desktop (最简单!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+第1步: 下载并安装 GitHub Desktop
+       https://desktop.github.com/
+
+第2步: 登录你的 GitHub 账号
+       - 打开 GitHub Desktop
+       - File → Options → Accounts → Sign in
+       - 使用浏览器登录
+
+第3步: 添加本地仓库
+       - File → Add local repository
+       - 选择文件夹: C:\Users\shiqi.he\Documents\inventory
+       - 如果提示"不是Git仓库",点击 "Create a repository"
+
+第4步: 创建提交
+       - 在左下角看到所有待提交的文件
+       - Summary 输入: "Initial commit: H1/H2外汇策略系统"
+       - 点击 "Commit to main"
+
+第5步: 发布到 GitHub
+       - 点击顶部的 "Publish repository"
+       - Repository name 确认是: inventory
+       - Owner 确认是: heshiqi1
+       - 取消勾选 "Keep this code private" (如果想公开项目)
+       - 点击 "Publish repository"
+
+第6步: 完成! 🎉
+       访问: https://github.com/heshiqi1/inventory
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔧 备选方法: 使用批处理脚本
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+前提: 先安装 Git
+      下载: https://git-scm.com/download/win
+      安装时选择默认选项即可
+
+步骤: 双击运行 git_upload.bat
+      按提示操作即可
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⌨️  高级方法: 使用命令行
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+在项目文件夹中打开 PowerShell 或 CMD, 依次执行:
+
+1. git init
+2. git config user.name "你的GitHub用户名"
+3. git config user.email "你的GitHub邮箱"
+4. git add .
+5. git commit -m "Initial commit: H1/H2外汇策略系统"
+6. git branch -M main
+7. git remote add origin https://github.com/heshiqi1/inventory.git
+8. git push -u origin main
+
+注意: 推送时需要输入 Personal Access Token (不是密码)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔑 如何获取 Personal Access Token (PAT)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 访问: https://github.com/settings/tokens
+2. 点击 "Generate new token" → "Generate new token (classic)"
+3. Note: 填写 "inventory-upload"
+4. Expiration: 选择 "No expiration" 或 "90 days"
+5. 勾选权限: repo (完整的仓库访问权限)
+6. 点击底部的 "Generate token"
+7. 复制生成的 token (只显示一次,务必保存!)
+8. 推送时用这个 token 作为密码
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 上传的文件清单
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+核心脚本:
+  ✅ forex_monitor_wx.py           - 实时监控主程序
+  ✅ forex_backtest_1year.py       - 最近1年回测
+  ✅ forex_backtest.py             - 长期回测(2022-2025)
+  ✅ forex_backtest_5min.py        - 5分钟高频回测
+  ✅ test_feishu.py                - 飞书通知测试
+  ✅ test_feishu_flow.py           - 飞书流程测试
+
+文档说明:
+  ✅ README.md                     - 项目主说明
+  ✅ 回测报告_最近1年.md           - 详细回测分析
+  ✅ 回测使用说明.md               - 使用指南
+  ✅ 企业微信机器人配置说明.md     - 配置教程
+  ✅ GitHub上传指南.md             - 详细上传教程
+
+配置文件:
+  ✅ .gitignore                    - Git忽略配置
+  ✅ git_upload.bat                - 上传脚本
+
+不会上传 (已在.gitignore中):
+  ❌ backtest_charts/              - 图表文件夹(太大)
+  ❌ backtest_charts_1year/        - 图表文件夹(太大)
+  ❌ backtest_charts_5min/         - 图表文件夹(太大)
+  ❌ sent_signals.json             - 缓存文件
+  ❌ __pycache__/                  - Python缓存
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️  重要提示
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ✅ 企业微信 Webhook URL 已脱敏为 "YOUR_WEBHOOK_URL"
+2. ✅ 图表文件夹已排除(避免上传大文件)
+3. ⚠️  上传后记得在 GitHub 仓库设置中添加项目描述和标签
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 上传后的建议操作
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 添加项目描述:
+   Settings → About (右上角)
+   Description: "H1/H2 外汇交易策略监控与回测系统"
+   Topics: forex, trading, backtest, python, technical-analysis
+
+2. 选择开源协议:
+   Add file → Create new file
+   文件名: LICENSE
+   点击 "Choose a license template"
+   选择 MIT License
+
+3. 启用 Discussions (可选):
+   Settings → Features → Discussions
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❓ 常见问题
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: 推送时要求输入密码,但密码总是错误?
+A: GitHub 已废弃密码认证,必须使用 Personal Access Token
+   参考上面的 PAT 获取步骤
+
+Q: 提示 "fatal: remote origin already exists"?
+A: 执行: git remote remove origin
+   然后重新添加: git remote add origin https://github.com/heshiqi1/inventory.git
+
+Q: 如何更新已上传的项目?
+A: 修改代码后:
+   git add .
+   git commit -m "更新说明"
+   git push
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📞 需要帮助?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+详细教程: 查看 GitHub上传指南.md
+GitHub文档: https://docs.github.com/cn
+Git教程: https://www.liaoxuefeng.com/wiki/896043488029600
+
+
+========================================
+祝上传顺利! 🚀
+========================================
