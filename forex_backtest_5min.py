@@ -1,7 +1,10 @@
 """
 H1/H2 Price Action Strategy - 5分钟周期回测
-使用最近1年的5分钟数据回测 forex_monitor_wx.py 策略
+使用最近60天的5分钟数据回测 forex_monitor_wx.py 策略
 策略: 双EMA排列 + RSI过滤 + H1/H2形态 + 分批止盈
+数据源: Twelve Data (免费，800次/天)
+  - 注册免费 API Key: https://twelvedata.com/apikey
+  - 支持: EURUSD、USDJPY、GBPUSD、XAUUSD、XAGUSD
 """
 
 import requests
@@ -16,6 +19,12 @@ from matplotlib.patches import FancyBboxPatch
 import os
 from datetime import datetime, timedelta
 warnings.filterwarnings('ignore')
+
+# ============================================================
+# ★ 请在此填入你的 Twelve Data 免费 API Key
+#   注册地址: https://twelvedata.com/apikey  (免费, 无需绑卡)
+# ============================================================
+TWELVEDATA_API_KEY = "61141e293ece4cad906e65413921b012"
 
 plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'SimHei', 'Arial Unicode MS']
 plt.rcParams['axes.unicode_minus'] = False
@@ -38,63 +47,122 @@ class Forex5MinBacktester:
         if not os.path.exists(self.chart_output_dir):
             os.makedirs(self.chart_output_dir)
 
-    def load_data_yfinance(self) -> pd.DataFrame:
-        """使用 yfinance 加载5分钟数据（最近60天，避免频率限制）"""
-        print(f"正在使用 yfinance 加载 {self.symbol} 5分钟数据...")
-        
-        try:
-            import yfinance as yf
-            
-            # 将 Stooq 符号转换为 Yahoo Finance 符号
-            yf_symbol_map = {
-                'eurusd': 'EURUSD=X',
-                'usdjpy': 'USDJPY=X', 
-                'gbpusd': 'GBPUSD=X',
-                'xauusd': 'GC=F',  # 黄金期货
-                'xagusd': 'SI=F',  # 白银期货
+    def load_data_twelvedata(self, api_key: str) -> pd.DataFrame:
+        """
+        使用 Twelve Data API 加载5分钟数据
+        - 免费 800次/天，支持外汇 + 贵金属
+        - 注册: https://twelvedata.com/apikey
+        - 分3批次请求，每批5000根K线，覆盖约60天
+        """
+        # 符号映射: 内部名 -> Twelve Data 符号
+        symbol_map = {
+            'eurusd': 'EUR/USD',
+            'usdjpy': 'USD/JPY',
+            'gbpusd': 'GBP/USD',
+            'xauusd': 'XAU/USD',
+            'xagusd': 'XAG/USD',
+        }
+        td_symbol = symbol_map.get(self.symbol.lower())
+        if not td_symbol:
+            print(f"  不支持的品种: {self.symbol}")
+            return None
+
+        print(f"正在使用 Twelve Data 加载 {td_symbol} 5分钟数据...")
+
+        if not api_key or api_key == "your_api_key_here":
+            print("  ✗ 未设置 API Key！")
+            print("  请到 https://twelvedata.com/apikey 免费注册")
+            print("  然后将 Key 填入脚本顶部的 TWELVEDATA_API_KEY 变量")
+            return None
+
+        base_url = "https://api.twelvedata.com/time_series"
+        all_frames = []
+        end_dt = None  # 第一次不设 end_date，获取最新数据
+
+        for batch in range(3):
+            params = {
+                'symbol':     td_symbol,
+                'interval':   '5min',
+                'outputsize': 5000,
+                'apikey':     api_key,
+                'format':     'JSON',
+                'timezone':   'UTC',
+                'order':      'DESC',   # 最新优先，便于分页
             }
-            
-            yf_symbol = yf_symbol_map.get(self.symbol.lower(), self.symbol)
-            
-            # yfinance 对5分钟数据限制为60天，所以只获取最近60天
-            end_dt = datetime.now()
-            start_dt = end_dt - timedelta(days=60)
-            
-            print(f"  正在获取数据: {start_dt.date()} ~ {end_dt.date()}")
-            print(f"  注意: yfinance 对5分钟数据限制为60天")
-            
-            ticker = yf.Ticker(yf_symbol)
-            
-            df = ticker.history(
-                start=start_dt,
-                end=end_dt,
-                interval='5m',
-                actions=False
-            )
-            
-            if df is None or len(df) == 0:
-                print(f"  {self.symbol} 无数据")
+            if end_dt:
+                params['end_date'] = end_dt.strftime('%Y-%m-%d %H:%M:%S')
+
+            try:
+                resp = requests.get(base_url, params=params, timeout=30)
+                resp.raise_for_status()
+                data = resp.json()
+            except Exception as e:
+                print(f"  第{batch+1}批请求失败: {e}")
+                break
+
+            # 检查 API 错误
+            if data.get('status') == 'error':
+                msg = data.get('message', '')
+                print(f"  API 错误: {msg}")
+                if 'apikey' in msg.lower() or 'invalid' in msg.lower():
+                    print("  请检查 API Key 是否正确")
+                elif 'limit' in msg.lower():
+                    print("  今日请求次数已达上限（免费版800次/天），明天再试")
                 return None
-            
-            self.df = df.sort_index()
-            
-            # 去重
-            self.df = self.df[~self.df.index.duplicated(keep='first')]
-            
-            print(f"  数据加载完成: {len(self.df)} 根K线 ({self.df.index[0]} ~ {self.df.index[-1]})")
-            
-            # 计算指标
-            self._calculate_indicators()
-            
-            return self.df
-            
-        except ImportError:
-            print("  错误: 需要安装 yfinance 库")
-            print("  请运行: pip install yfinance")
+
+            values = data.get('values', [])
+            if not values:
+                print(f"  第{batch+1}批无更多数据，停止分页")
+                break
+
+            batch_df = pd.DataFrame(values)
+            batch_df['datetime'] = pd.to_datetime(batch_df['datetime'])
+            batch_df = batch_df.set_index('datetime')
+            batch_df = batch_df.rename(columns={
+                'open': 'Open', 'high': 'High',
+                'low': 'Low', 'close': 'Close',
+                'volume': 'Volume'
+            })
+            for col in ['Open', 'High', 'Low', 'Close']:
+                batch_df[col] = pd.to_numeric(batch_df[col], errors='coerce')
+
+            all_frames.append(batch_df)
+            oldest_dt = batch_df.index.min()
+            print(f"  第{batch+1}批: {len(batch_df)} 根K线 "
+                  f"({oldest_dt.date()} ~ {batch_df.index.max().date()})")
+
+            # 若已覆盖 start_date，停止分页
+            target_start = datetime.now() - timedelta(days=62)
+            if oldest_dt <= pd.Timestamp(target_start, tz=oldest_dt.tzinfo):
+                break
+
+            # 下一批的 end_date = 本批最旧时间 - 1分钟
+            end_dt = oldest_dt.to_pydatetime() - timedelta(minutes=1)
+            # 每批间隔1秒，避免触发频率限制
+            time.sleep(1)
+
+        if not all_frames:
+            print(f"  {self.symbol} 数据获取失败，无任何数据返回")
             return None
-        except Exception as e:
-            print(f"  加载失败: {e}")
-            return None
+
+        combined = pd.concat(all_frames)
+        combined = combined[~combined.index.duplicated(keep='first')]
+        combined = combined.sort_index()
+
+        # 只保留 start_date 以后的数据
+        start_ts = pd.Timestamp(self.start_date)
+        if combined.index.tz is not None:
+            start_ts = start_ts.tz_localize(combined.index.tz)
+        combined = combined[combined.index >= start_ts]
+
+        self.df = combined
+        total_days = (self.df.index.max() - self.df.index.min()).days
+        print(f"  ✓ 合并完成: {len(self.df)} 根K线 "
+              f"({self.df.index[0].date()} ~ {self.df.index[-1].date()}, "
+              f"约{total_days}天)")
+
+        self._calculate_indicators()
+        return self.df
 
     def _calculate_indicators(self):
         """计算所有技术指标（与 forex_monitor_wx.py 完全一致）"""
@@ -526,8 +594,10 @@ class Forex5MinBacktester:
         }
 
 
-def run_5min_backtest():
-    """运行5分钟周期回测（最近60天数据）"""
+def run_5min_backtest(api_key: str = None):
+    """运行5分钟周期回测（Twelve Data，最近60天数据）"""
+
+    api_key = api_key or TWELVEDATA_API_KEY
 
     SYMBOLS = {
         'EURUSD': 'eurusd',
@@ -537,24 +607,23 @@ def run_5min_backtest():
         'XAGUSD': 'xagusd',
     }
 
-    # 最近60天（yfinance限制）
-    END_DATE = datetime.now().strftime("%Y-%m-%d")
+    END_DATE   = datetime.now().strftime("%Y-%m-%d")
     START_DATE = (datetime.now() - timedelta(days=60)).strftime("%Y-%m-%d")
-    
+
     INITIAL_CAPITAL = 100000
-    RISK_PER_TRADE = 0.02
+    RISK_PER_TRADE  = 0.02
     CHART_OUTPUT_DIR = "backtest_charts_5min"
 
     print("="*70)
     print("H1/H2 外汇/贵金属 5分钟周期回测 (forex_monitor_wx.py 策略)")
     print("="*70)
+    print(f"数据源:   Twelve Data (免费 API, 800次/天)")
     print(f"时间周期: 5分钟")
     print(f"回测区间: {START_DATE} ~ {END_DATE} (最近60天)")
     print(f"初始资金: ${INITIAL_CAPITAL:,.0f}")
     print(f"风险比例: {RISK_PER_TRADE*100}%/笔")
-    print(f"图表输出目录: {CHART_OUTPUT_DIR}")
-    print("策略: 双EMA排列 + RSI过滤 + H1/H2形态 + 分批止盈(TP1保本+TP2)")
-    print("注意: yfinance 对5分钟数据限制为60天")
+    print(f"图表输出: {CHART_OUTPUT_DIR}/")
+    print("策略:     双EMA排列 + RSI过滤 + H1/H2形态 + 分批止盈(TP1保本+TP2)")
     print("="*70)
 
     results = []
@@ -564,10 +633,9 @@ def run_5min_backtest():
         print(f"测试品种: {name} ({symbol})")
         print(f"{'='*50}")
 
-        # 添加延迟避免频率限制（第一个品种除外）
+        # 品种间等待1秒，避免触发API频率限制
         if idx > 0:
-            print(f"  等待3秒以避免API频率限制...")
-            time.sleep(3)
+            time.sleep(1)
 
         backtester = Forex5MinBacktester(
             symbol=symbol,
@@ -578,7 +646,7 @@ def run_5min_backtest():
             chart_output_dir=CHART_OUTPUT_DIR
         )
 
-        df = backtester.load_data_yfinance()
+        df = backtester.load_data_twelvedata(api_key)
 
         if df is None:
             print(f"  {name} 数据加载失败，跳过")
@@ -597,32 +665,33 @@ def run_5min_backtest():
 
         if result:
             results.append({'symbol': name, **result})
-
+            return_pct = (result['final_capital'] - INITIAL_CAPITAL) / INITIAL_CAPITAL * 100
             print(f"\n--- {name} 回测结果 ---")
-            print(f"交易次数: {result['total_trades']}")
-            print(f"胜率:     {result['win_rate']:.2f}%")
+            print(f"交易次数:  {result['total_trades']}")
+            print(f"胜率:      {result['win_rate']:.2f}%")
             print(f"TP1触及率: {result['tp1_rate']:.2f}%")
-            print(f"总盈亏:   ${result['total_pnl']:,.2f}")
-            print(f"平均盈利: ${result['avg_win']:,.2f}")
-            print(f"平均亏损: ${result['avg_loss']:,.2f}")
-            print(f"盈利因子: {result['profit_factor']:.2f}")
-            print(f"最终资金: ${result['final_capital']:,.2f}")
-            print(f"收益率:   {((result['final_capital'] - INITIAL_CAPITAL) / INITIAL_CAPITAL * 100):.2f}%")
-            print(f"生成图表: {len(result['chart_files'])} 张")
+            print(f"总盈亏:    ${result['total_pnl']:,.2f}")
+            print(f"平均盈利:  ${result['avg_win']:,.2f}")
+            print(f"平均亏损:  ${result['avg_loss']:,.2f}")
+            print(f"盈利因子:  {result['profit_factor']:.2f}")
+            print(f"最终资金:  ${result['final_capital']:,.2f}")
+            print(f"收益率:    {return_pct:.2f}%")
+            print(f"生成图表:  {len(result['chart_files'])} 张")
         else:
             print("无有效交易")
 
     print("\n" + "="*80)
     print("各品种汇总对比")
     print("="*80)
-    print(f"{'品种':<10} {'交易数':>8} {'胜率':>8} {'TP1率':>8} {'总盈亏':>12} {'盈利因子':>10} {'收益率':>10}")
+    print(f"{'品种':<10} {'交易数':>8} {'胜率':>8} {'TP1率':>8} "
+          f"{'总盈亏':>12} {'盈利因子':>10} {'收益率':>10}")
     print("-"*85)
 
     for r in results:
-        return_pct = ((r['final_capital'] - INITIAL_CAPITAL) / INITIAL_CAPITAL * 100)
+        return_pct = (r['final_capital'] - INITIAL_CAPITAL) / INITIAL_CAPITAL * 100
         print(f"{r['symbol']:<10} {r['total_trades']:>8} {r['win_rate']:>7.1f}%"
-              f" {r['tp1_rate']:>7.1f}% ${r['total_pnl']:>10,.0f} {r['profit_factor']:>10.2f}"
-              f" {return_pct:>9.1f}%")
+              f" {r['tp1_rate']:>7.1f}% ${r['total_pnl']:>10,.0f}"
+              f" {r['profit_factor']:>10.2f} {return_pct:>9.1f}%")
 
     if results:
         valid = [r for r in results if r['total_trades'] >= 5]
@@ -633,21 +702,32 @@ def run_5min_backtest():
         print(f"最高盈利品种: {best_pnl['symbol']} (${best_pnl['total_pnl']:,.0f})")
 
     total_charts = sum(len(r.get('chart_files', [])) for r in results)
-    print(f"\n总共生成 {total_charts} 张交易图表，保存在 {CHART_OUTPUT_DIR} 目录")
-    print("\n注意: 由于5分钟数据量巨大，仅为每个品种前20笔交易生成图表")
+    print(f"\n总共生成 {total_charts} 张交易图表，保存在 {CHART_OUTPUT_DIR}/ 目录")
+    print("注意: 每个品种仅为前20笔交易生成图表")
 
     return results
 
 
 if __name__ == "__main__":
-    print("\n提示: 此脚本需要 yfinance 库来获取5分钟数据")
-    print("如果尚未安装，请运行: pip install yfinance\n")
-    
-    try:
-        results = run_5min_backtest()
-    except KeyboardInterrupt:
-        print("\n\n回测已手动停止 (Ctrl+C)")
-    except Exception as e:
-        print(f"\n回测发生错误: {e}")
-        import traceback
-        traceback.print_exc()
+    print("=" * 60)
+    print("H1/H2 外汇/贵金属 5分钟回测")
+    print("数据源: Twelve Data (免费)")
+    print("=" * 60)
+
+    if TWELVEDATA_API_KEY == "your_api_key_here":
+        print("\n[!] 请先设置 API Key！")
+        print("1. 访问 https://twelvedata.com/apikey 免费注册")
+        print("2. 复制 API Key")
+        print("3. 将脚本顶部 TWELVEDATA_API_KEY = \"your_api_key_here\"")
+        print("   替换为你的 Key，例如:")
+        print("   TWELVEDATA_API_KEY = \"abc123def456...\"")
+        print("\n免费账号额度: 800次/天，5个品种 × 3批次 = 15次，绰绰有余")
+    else:
+        try:
+            results = run_5min_backtest()
+        except KeyboardInterrupt:
+            print("\n\n回测已手动停止 (Ctrl+C)")
+        except Exception as e:
+            print(f"\n回测发生错误: {e}")
+            import traceback
+            traceback.print_exc()
