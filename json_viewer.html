@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON数据表格查看器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .upload-section {
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .upload-box {
+            border: 3px dashed #667eea;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            background: white;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .upload-box:hover {
+            border-color: #764ba2;
+            background: #f8f9ff;
+        }
+
+        .upload-box.dragover {
+            border-color: #764ba2;
+            background: #f0f0ff;
+            transform: scale(1.02);
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .upload-label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .upload-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .upload-text {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+
+        .upload-hint {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .info-section {
+            padding: 20px 30px;
+            background: #e7f3ff;
+            display: none;
+            border-bottom: 2px solid #b8daff;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .info-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .info-label {
+            font-size: 12px;
+            color: #6c757d;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            font-size: 20px;
+            color: #212529;
+            font-weight: 700;
+        }
+
+        .table-section {
+            padding: 30px;
+            display: none;
+            overflow-x: auto;
+        }
+
+        .filter-controls {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-controls input {
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 14px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .filter-controls button {
+            padding: 8px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .filter-controls button:hover {
+            background: #5568d3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th {
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            white-space: nowrap;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 13px;
+            color: #495057;
+        }
+
+        tbody tr {
+            transition: background 0.2s;
+        }
+
+        tbody tr:hover {
+            background: #f8f9ff;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        tbody tr:nth-child(even):hover {
+            background: #f0f0ff;
+        }
+
+        .marked-true {
+            color: #28a745;
+            font-weight: 600;
+        }
+
+        .marked-false {
+            color: #6c757d;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 60px;
+            color: #6c757d;
+            font-size: 18px;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 30px;
+            display: none;
+            border-left: 4px solid #f5c6cb;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #f8f9fa;
+            color: #6c757d;
+            font-size: 14px;
+            border-top: 2px solid #e9ecef;
+        }
+
+        .export-btn {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .export-btn:hover {
+            background: #218838;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .table-section {
+                padding: 15px;
+            }
+
+            th, td {
+                padding: 8px 6px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 JSON数据表格查看器</h1>
+            <p>上传JSON文件并以表格形式展示数据</p>
+        </div>
+
+        <div class="upload-section">
+            <div class="upload-box" id="uploadBox">
+                <label for="fileInput" class="upload-label">
+                    <div class="upload-icon">📁</div>
+                    <div class="upload-text">点击选择文件或拖拽文件到此处</div>
+                    <div class="upload-hint">支持 .json 格式文件</div>
+                </label>
+                <input type="file" id="fileInput" accept=".json" />
+            </div>
+        </div>
+
+        <div class="error" id="errorBox"></div>
+
+        <div class="info-section" id="infoSection">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">总记录数</div>
+                    <div class="info-value" id="totalCount">-</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">当前显示</div>
+                    <div class="info-value" id="currentCount">-</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">下一页</div>
+                    <div class="info-value" id="nextPage" style="font-size: 12px; word-break: break-all;">-</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">上一页</div>
+                    <div class="info-value" id="prevPage" style="font-size: 12px; word-break: break-all;">-</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-section" id="tableSection">
+            <div class="filter-controls">
+                <input type="text" id="searchInput" placeholder="🔍 搜索表格内容...">
+                <button onclick="filterTable()">搜索</button>
+                <button onclick="clearFilter()">清除</button>
+                <button class="export-btn" onclick="exportToCSV()">导出 CSV</button>
+            </div>
+            <div id="tableContainer"></div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 JSON数据查看器 | 支持拖拽上传和数据筛选</p>
+        </div>
+    </div>
+
+    <script>
+        let jsonData = null;
+        let originalResults = [];
+
+        const fileInput = document.getElementById('fileInput');
+        const uploadBox = document.getElementById('uploadBox');
+        const errorBox = document.getElementById('errorBox');
+        const infoSection = document.getElementById('infoSection');
+        const tableSection = document.getElementById('tableSection');
+
+        fileInput.addEventListener('change', handleFileSelect);
+        uploadBox.addEventListener('click', () => fileInput.click());
+
+        uploadBox.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadBox.classList.add('dragover');
+        });
+
+        uploadBox.addEventListener('dragleave', () => {
+            uploadBox.classList.remove('dragover');
+        });
+
+        uploadBox.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadBox.classList.remove('dragover');
+            const file = e.dataTransfer.files[0];
+            if (file && file.type === 'application/json') {
+                handleFile(file);
+            } else {
+                showError('请上传有效的JSON文件');
+            }
+        });
+
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                handleFile(file);
+            }
+        }
+
+        function handleFile(file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    jsonData = JSON.parse(e.target.result);
+                    hideError();
+                    displayData(jsonData);
+                } catch (error) {
+                    showError('JSON文件格式错误: ' + error.message);
+                }
+            };
+            reader.onerror = function() {
+                showError('文件读取失败');
+            };
+            reader.readAsText(file);
+        }
+
+        function displayData(data) {
+            if (!data.results || !Array.isArray(data.results)) {
+                showError('JSON数据格式不正确,缺少results数组');
+                return;
+            }
+
+            originalResults = [...data.results];
+
+            document.getElementById('totalCount').textContent = data.count || '-';
+            document.getElementById('currentCount').textContent = data.results.length;
+            document.getElementById('nextPage').textContent = data.next || '无';
+            document.getElementById('prevPage').textContent = data.previous || '无';
+
+            infoSection.style.display = 'block';
+            tableSection.style.display = 'block';
+
+            renderTable(data.results);
+        }
+
+        function renderTable(results) {
+            if (results.length === 0) {
+                document.getElementById('tableContainer').innerHTML = '<div class="no-data">暂无数据</div>';
+                return;
+            }
+
+            const keys = Object.keys(results[0]);
+            
+            let tableHTML = '<table><thead><tr>';
+            keys.forEach(key => {
+                tableHTML += `<th>${key}</th>`;
+            });
+            tableHTML += '</tr></thead><tbody>';
+
+            results.forEach(row => {
+                tableHTML += '<tr>';
+                keys.forEach(key => {
+                    let value = row[key];
+                    let cellClass = '';
+                    
+                    if (key === 'marked') {
+                        cellClass = value ? 'marked-true' : 'marked-false';
+                        value = value ? '✓ 是' : '✗ 否';
+                    } else if (value === null || value === '') {
+                        value = '-';
+                    } else if (typeof value === 'number') {
+                        value = value.toLocaleString();
+                    } else if (typeof value === 'string' && value.includes('T') && value.includes(':')) {
+                        const date = new Date(value);
+                        if (!isNaN(date.getTime())) {
+                            value = date.toLocaleString('zh-CN');
+                        }
+                    }
+                    
+                    tableHTML += `<td class="${cellClass}">${value}</td>`;
+                });
+                tableHTML += '</tr>';
+            });
+
+            tableHTML += '</tbody></table>';
+            document.getElementById('tableContainer').innerHTML = tableHTML;
+        }
+
+        function filterTable() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            if (!searchTerm) {
+                renderTable(originalResults);
+                return;
+            }
+
+            const filtered = originalResults.filter(row => {
+                return Object.values(row).some(value => {
+                    if (value === null || value === undefined) return false;
+                    return String(value).toLowerCase().includes(searchTerm);
+                });
+            });
+
+            document.getElementById('currentCount').textContent = filtered.length;
+            renderTable(filtered);
+        }
+
+        function clearFilter() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('currentCount').textContent = originalResults.length;
+            renderTable(originalResults);
+        }
+
+        function exportToCSV() {
+            if (!originalResults || originalResults.length === 0) {
+                showError('没有数据可导出');
+                return;
+            }
+
+            const keys = Object.keys(originalResults[0]);
+            let csvContent = keys.join(',') + '\n';
+
+            originalResults.forEach(row => {
+                const values = keys.map(key => {
+                    let value = row[key];
+                    if (value === null || value === undefined) {
+                        value = '';
+                    }
+                    value = String(value).replace(/"/g, '""');
+                    return `"${value}"`;
+                });
+                csvContent += values.join(',') + '\n';
+            });
+
+            const blob = new Blob(['\uFEFF' + csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'data_export_' + new Date().getTime() + '.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function showError(message) {
+            errorBox.textContent = '❌ ' + message;
+            errorBox.style.display = 'block';
+        }
+
+        function hideError() {
+            errorBox.style.display = 'none';
+        }
+
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                filterTable();
+            }
+        });
+    </script>
+</body>
+</html>
