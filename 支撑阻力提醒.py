@@ -6,8 +6,12 @@ import requests
 from datetime import datetime
 from collections import deque
 
+"""
+增加微信企业启动通知，每次支撑阻力机会出现的时候通知机会：品种、价格、趋势方向等等重要信息，支撑多品种同时监控提醒，并且使用twelvedata数据源
+"""
+
 # ==================== 配置参数 ====================
-SYMBOL = 'JPY/USDT'                     # 交易对
+SYMBOLS = ['JPY/USDT', 'EUR/USDT', 'BTC/USDT']  # 交易对列表（支持多品种）
 TIMEFRAMES = ['5m', '15m', '1h']         # 监控周期
 EMA_PERIODS = [20, 50, 100]              # EMA周期
 SWING_WINDOW = 2                         # 摆动点识别窗口（左右各几根）
@@ -325,6 +329,25 @@ def send_wework_msg(message):
             print(f"企业微信发送失败: {response.text}")
     except Exception as e:
         print(f"企业微信发送异常: {e}")
+
+def get_trend_name(trend):
+    """将趋势代码转换为中文名称"""
+    trend_map = {
+        'bull': '🟢 看涨',
+        'bear': '🔴 看跌',
+        'neutral': '⚪ 中性'
+    }
+    return trend_map.get(trend, trend)
+
+def format_price(price, symbol):
+    """根据交易对格式化价格显示"""
+    # 根据交易对确定小数位数
+    if 'JPY' in symbol or 'BTC' in symbol:
+        return f"{price:.2f}"
+    elif 'EUR' in symbol:
+        return f"{price:.5f}"
+    else:
+        return f"{price:.4f}"
 
 # ==================== 主监控循环 ====================
 def main():
