@@ -108,5 +108,1326 @@
         "distance_pct": 0.057134708603376466
       }
     ]
+  },
+  {
+    "timestamp": "2026-03-05 14:24:26",
+    "timestamp_unix": 1772691866.477555,
+    "symbol": "XAUUSD",
+    "price": 5139.31336,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.05579072142820237
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:25:38",
+    "timestamp_unix": 1772691938.6909082,
+    "symbol": "XAUUSD",
+    "price": 5139.31336,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.05579072142820237
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:26:48",
+    "timestamp_unix": 1772692008.8562353,
+    "symbol": "XAUUSD",
+    "price": 5139.31336,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.05579072142820237
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:28:03",
+    "timestamp_unix": 1772692083.030098,
+    "symbol": "XAUUSD",
+    "price": 5139.31336,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.05579072142820237
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:29:14",
+    "timestamp_unix": 1772692154.2115846,
+    "symbol": "XAUUSD",
+    "price": 5139.31336,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.05579072142820237
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:30:24",
+    "timestamp_unix": 1772692224.3861735,
+    "symbol": "XAUUSD",
+    "price": 5139.31336,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.05579072142820237
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:31:43",
+    "timestamp_unix": 1772692303.7510421,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:32:56",
+    "timestamp_unix": 1772692376.2364836,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:34:06",
+    "timestamp_unix": 1772692446.394668,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:35:21",
+    "timestamp_unix": 1772692521.4275043,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:36:32",
+    "timestamp_unix": 1772692592.7853155,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:37:43",
+    "timestamp_unix": 1772692663.0052552,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:38:58",
+    "timestamp_unix": 1772692738.1631837,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:40:09",
+    "timestamp_unix": 1772692809.5746288,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:41:19",
+    "timestamp_unix": 1772692879.8116028,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:42:36",
+    "timestamp_unix": 1772692956.9197443,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:43:48",
+    "timestamp_unix": 1772693028.3466437,
+    "symbol": "XAUUSD",
+    "price": 5143.15607,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.018965980940957715
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:45:23",
+    "timestamp_unix": 1772693123.7250168,
+    "symbol": "XAUUSD",
+    "price": 5150.02309,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:46:37",
+    "timestamp_unix": 1772693197.66251,
+    "symbol": "XAUUSD",
+    "price": 5150.02309,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:47:47",
+    "timestamp_unix": 1772693267.959299,
+    "symbol": "XAUUSD",
+    "price": 5150.02309,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:49:08",
+    "timestamp_unix": 1772693348.2218366,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:50:24",
+    "timestamp_unix": 1772693424.0095525,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:51:40",
+    "timestamp_unix": 1772693500.4080863,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:52:59",
+    "timestamp_unix": 1772693579.2628438,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:54:12",
+    "timestamp_unix": 1772693652.0468755,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:55:22",
+    "timestamp_unix": 1772693722.2764456,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:56:41",
+    "timestamp_unix": 1772693801.2318501,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:57:53",
+    "timestamp_unix": 1772693873.8222237,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:59:04",
+    "timestamp_unix": 1772693944.3457065,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:00:22",
+    "timestamp_unix": 1772694022.763906,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:01:40",
+    "timestamp_unix": 1772694100.4738073,
+    "symbol": "XAUUSD",
+    "price": 5155.85492,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5160.25879,
+        "distance_pct": 0.08541493250551156
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:19:49",
+    "timestamp_unix": 1772695189.8241627,
+    "symbol": "XAUUSD",
+    "price": 5166.09203,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.030678121698113365
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 5168.358161319999,
+        "distance_pct": 0.043865484912773776
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:31:23",
+    "timestamp_unix": 1772695883.5548856,
+    "symbol": "XAUUSD",
+    "price": 5165.38633,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 5,
+      "resistance_levels_count": 6,
+      "near_levels_count": 6,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 5166.3012100000005,
+        "distance_pct": 0.017711743934558065
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5160.53524,
+        "distance_pct": 0.09391533740323568
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.0443444082138859
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 5160.53524,
+        "distance_pct": 0.09391533740323568
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 5166.92044,
+        "distance_pct": 0.029699811436942416
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 5168.4273471999995,
+        "distance_pct": 0.05887298656321917
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:34:08",
+    "timestamp_unix": 1772696048.3486345,
+    "symbol": "XAUUSD",
+    "price": 5164.39018,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.06364178316208095
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:40:31",
+    "timestamp_unix": 1772696431.7112103,
+    "symbol": "XAUUSD",
+    "price": 5164.39018,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.06364178316208095
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:46:16",
+    "timestamp_unix": 1772696776.4482634,
+    "symbol": "XAUUSD",
+    "price": 5164.39018,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.06364178316208095
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:51:31",
+    "timestamp_unix": 1772697091.417899,
+    "symbol": "XAUUSD",
+    "price": 5163.1533,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.08761293219784479
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:56:44",
+    "timestamp_unix": 1772697404.445957,
+    "symbol": "XAUUSD",
+    "price": 5163.1533,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.08761293219784479
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:01:59",
+    "timestamp_unix": 1772697719.2084112,
+    "symbol": "XAUUSD",
+    "price": 5161.88865,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:07:12",
+    "timestamp_unix": 1772698032.2020917,
+    "symbol": "XAUUSD",
+    "price": 5161.88865,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:12:25",
+    "timestamp_unix": 1772698345.3253322,
+    "symbol": "XAUUSD",
+    "price": 5161.88865,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:17:38",
+    "timestamp_unix": 1772698658.467676,
+    "symbol": "XAUUSD",
+    "price": 5141.69624,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062,
+        "distance_pct": 0.009420626528491183
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:23:04",
+    "timestamp_unix": 1772698984.6222885,
+    "symbol": "XAUUSD",
+    "price": 5141.69624,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:28:27",
+    "timestamp_unix": 1772699307.7112417,
+    "symbol": "XAUUSD",
+    "price": 5141.69624,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:33:40",
+    "timestamp_unix": 1772699620.7688494,
+    "symbol": "XAUUSD",
+    "price": 5152.16623,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:38:55",
+    "timestamp_unix": 1772699935.4111948,
+    "symbol": "XAUUSD",
+    "price": 5152.16623,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:44:08",
+    "timestamp_unix": 1772700248.9853554,
+    "symbol": "XAUUSD",
+    "price": 5152.16623,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 6,
+      "resistance_levels_count": 7,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:49:25",
+    "timestamp_unix": 1772700565.0783026,
+    "symbol": "XAUUSD",
+    "price": 5167.17006,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 5,
+      "resistance_levels_count": 8,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 5163.998912499999,
+        "distance_pct": 0.0613710689444794
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.00980865723624653
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:54:41",
+    "timestamp_unix": 1772700881.8867502,
+    "symbol": "XAUUSD",
+    "price": 5167.17006,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 5,
+      "resistance_levels_count": 8,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 5163.998912499999,
+        "distance_pct": 0.0613710689444794
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.00980865723624653
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:59:56",
+    "timestamp_unix": 1772701196.409878,
+    "symbol": "XAUUSD",
+    "price": 5167.17006,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 5,
+      "resistance_levels_count": 8,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 5163.998912499999,
+        "distance_pct": 0.0613710689444794
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.00980865723624653
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:29:47",
+    "timestamp_unix": 1772702987.2993765,
+    "symbol": "XAUUSD",
+    "price": 5169.85728,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 5,
+      "resistance_levels_count": 8,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.04217505207417337
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5173.30564,
+        "distance_pct": 0.06670126104524517
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 5173.30564,
+        "distance_pct": 0.06670126104524517
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:35:00",
+    "timestamp_unix": 1772703300.8377943,
+    "symbol": "XAUUSD",
+    "price": 5164.62329,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 5,
+      "resistance_levels_count": 8,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 5160.0103149999995,
+        "distance_pct": 0.08931871195587075
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5167.67689,
+        "distance_pct": 0.05912531908981261
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 5159.97579202,
+        "distance_pct": 0.08998716303276555
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:55:45",
+    "timestamp_unix": 1772704545.5410397,
+    "symbol": "XAUUSD",
+    "price": 5162.10025,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 5159.83814,
+        "distance_pct": 0.04382150462886836
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:56:48",
+    "timestamp_unix": 1772704608.367972,
+    "symbol": "XAUUSD",
+    "price": 5162.47475,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 5159.83814,
+        "distance_pct": 0.0510725984664714
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:02:00",
+    "timestamp_unix": 1772704920.1288607,
+    "symbol": "XAUUSD",
+    "price": 5161.04464,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 6,
+      "resistance_levels_count": 8,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 5164.084118000001,
+        "distance_pct": 0.058892689600929304
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5156.74887,
+        "distance_pct": 0.08323450579570496
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 5156.74887,
+        "distance_pct": 0.08323450579570496
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:07:17",
+    "timestamp_unix": 1772705237.3050246,
+    "symbol": "XAUUSD",
+    "price": 5161.04464,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 6,
+      "resistance_levels_count": 8,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 5164.084118000001,
+        "distance_pct": 0.058892689600929304
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5156.74887,
+        "distance_pct": 0.08323450579570496
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 5156.74887,
+        "distance_pct": 0.08323450579570496
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:12:31",
+    "timestamp_unix": 1772705551.8601887,
+    "symbol": "XAUUSD",
+    "price": 5161.04464,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 6,
+      "resistance_levels_count": 8,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 5164.084118000001,
+        "distance_pct": 0.058892689600929304
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 5156.74887,
+        "distance_pct": 0.08323450579570496
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 5156.74887,
+        "distance_pct": 0.08323450579570496
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:17:46",
+    "timestamp_unix": 1772705866.375963,
+    "symbol": "XAUUSD",
+    "price": 5155.02495,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 18:23:04",
+    "timestamp_unix": 1772706184.6392765,
+    "symbol": "XAUUSD",
+    "price": 5155.02495,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
   }
 ]

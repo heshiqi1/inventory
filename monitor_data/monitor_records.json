@@ -50,5 +50,428 @@
     ],
     "reversal_pattern": null,
     "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 14:24:30",
+    "timestamp_unix": 1772691870.55716,
+    "symbol": "GBPUSD",
+    "price": 1.33162,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.3326875
+      }
+    ],
+    "reversal_pattern": "bullish_engulfing",
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 14:31:37",
+    "timestamp_unix": 1772692297.5925288,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1603166666666667
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 14:31:48",
+    "timestamp_unix": 1772692308.0862117,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.332389375
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 14:45:19",
+    "timestamp_unix": 1772693119.6227276,
+    "symbol": "EURUSD",
+    "price": 1.16008,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1603166666666667
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.1611237405990895
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 14:45:29",
+    "timestamp_unix": 1772693129.417352,
+    "symbol": "GBPUSD",
+    "price": 1.33237,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.332389375
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 14:49:00",
+    "timestamp_unix": 1772693340.9965665,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.160098
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.1610015249410455
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.1601050000000002
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.16041298
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 14:49:15",
+    "timestamp_unix": 1772693355.7031364,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.33209125
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 15:00:32",
+    "timestamp_unix": 1772694032.0597532,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 15:19:47",
+    "timestamp_unix": 1772695187.7841883,
+    "symbol": "EURUSD",
+    "price": 1.16031,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.1609382011182425
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 15:19:53",
+    "timestamp_unix": 1772695193.4132254,
+    "symbol": "GBPUSD",
+    "price": 1.33348,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.3337089909418136
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 15:34:06",
+    "timestamp_unix": 1772696046.2967048,
+    "symbol": "EURUSD",
+    "price": 1.16087,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1614328571428572
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.16184
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.1609704812836497
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 15:51:28",
+    "timestamp_unix": 1772697088.0739055,
+    "symbol": "EURUSD",
+    "price": 1.16093,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1612971428571428
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.16184
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.161022634993009
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 16:01:55",
+    "timestamp_unix": 1772697715.9676526,
+    "symbol": "EURUSD",
+    "price": 1.16042,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1614233333333333
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.160937667488918
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 16:17:40",
+    "timestamp_unix": 1772698660.294722,
+    "symbol": "XAUUSD",
+    "price": 5141.69624,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5142.18062
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 16:17:45",
+    "timestamp_unix": 1772698665.369496,
+    "symbol": "GBPUSD",
+    "price": 1.33251,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.3336797804895033
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 16:33:45",
+    "timestamp_unix": 1772699625.7947013,
+    "symbol": "GBPUSD",
+    "price": 1.33202,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 16:49:21",
+    "timestamp_unix": 1772700561.559817,
+    "symbol": "EURUSD",
+    "price": 1.15966,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.160396763731027
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.15993
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.16032176
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 16:49:30",
+    "timestamp_unix": 1772700570.957409,
+    "symbol": "GBPUSD",
+    "price": 1.33263,
+    "trend": "bear",
+    "near_levels": [
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.333400468186189
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.3327399999999998
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.3330090399999999
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
   }
 ]

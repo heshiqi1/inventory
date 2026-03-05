@@ -4,6 +4,8 @@ import time
 import requests
 import os
 import json
+import base64
+import hashlib
 import threading
 from datetime import datetime, timedelta
 from collections import deque
@@ -13,8 +15,14 @@ from collections import deque
 """
 
 # ==================== 配置参数 ====================
-# Twelve Data API配置
-TWELVEDATA_API_KEY = os.getenv("TWELVEDATA_API_KEY", "8ed68089e5114f4893927e4103bb5c6c")
+# Twelve Data API配置（支持多个 Key，被限流或额度用尽时自动切换）
+# 方式1：环境变量 TWELVEDATA_API_KEY，多个用英文逗号分隔，如 "key1,key2,key3"
+# 方式2：直接写列表，如 ['key1', 'key2']
+_env_keys = os.getenv("TWELVEDATA_API_KEY", "").strip()
+if _env_keys:
+    TWELVEDATA_API_KEYS = [k.strip() for k in _env_keys.split(",") if k.strip()]
+else:
+    TWELVEDATA_API_KEYS = ["8ed68089e5114f4893927e4103bb5c6c","61141e293ece4cad906e65413921b012","a8a880312e204b29b800da9cde8f9f9a"]  # 默认单 key，可改为 ['key1','key2']
 TWELVEDATA_URL = "https://api.twelvedata.com/time_series"
 
 # 交易对配置（支持多品种）
@@ -22,21 +30,28 @@ TWELVEDATA_URL = "https://api.twelvedata.com/time_series"
 SYMBOLS = {
     'USDJPY': 'USD/JPY',      # 美元/日元
     'EURUSD': 'EUR/USD',      # 欧元/美元
-    'BTCUSD': 'BTC/USD',      # 比特币/美元
+    # 'BTCUSD': 'BTC/USD',      # 比特币/美元
     'XAUUSD': 'XAU/USD',      # 黄金/美元
     'GBPUSD': 'GBP/USD',      # 英镑/美元
 }
 
-TIMEFRAMES = ['15min']  # 监控周期（twelvedata格式）- 仅使用15分钟数据
+# 分析数据的K线周期（twelvedata 格式：1min, 5min, 15min, 30min, 45min, 1h, 2h, 4h, 1day）
+ANALYSIS_TIMEFRAME = '15min'
+TIMEFRAMES = [ANALYSIS_TIMEFRAME]      # 拉取并用于分析的周期，与上面保持一致即可
+# 每次监控触发的时间间隔（秒）：每轮全品种检查完后等待多久再下一轮
+MONITOR_INTERVAL_SECONDS = 300
+
 EMA_PERIODS = [20, 50, 100]            # EMA周期
 SWING_WINDOW = 2                       # 摆动点识别窗口（左右各几根）
 LEVEL_MERGE_THRESHOLD = 0.001          # 水平位合并阈值（0.1%）
 NEAR_THRESHOLD = 0.001                 # 价格接近阈值（0.1%）
 COOLDOWN_SECONDS = 900                 # 同一位置重复提醒冷却时间（秒）
 WEWORK_WEBHOOK_URL = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c3f76ed3-1f75-4288-afe0-60f7a217f128'  # 企业微信机器人Webhook地址
+WEWORK_SEND_CHART_IMAGE = False         # 通知时是否发送K线图：True=发送，False=仅发文字
 
 # 本地存储配置
 MONITOR_DATA_DIR = "monitor_data"       # 监控数据存储目录
+MONITOR_CHARTS_DIR = os.path.join(MONITOR_DATA_DIR, "charts")  # K线图保存目录
 MONITOR_DATA_FILE = os.path.join(MONITOR_DATA_DIR, "monitor_records.json")  # 监控记录文件
 DATA_RETENTION_DAYS = 30               # 数据保留天数（30天）
 
@@ -45,6 +60,40 @@ API_MIN_INTERVAL = 1.0                 # 两次API请求之间的最小间隔（
 API_MAX_RETRIES = 5                    # 最大重试次数
 API_RETRY_BASE_DELAY = 2.0             # 重试基础延迟（秒）
 API_RETRY_MAX_DELAY = 60.0             # 重试最大延迟（秒）
+
+# ==================== API Key 多 Key 切换 ====================
+class TwelveDataKeyManager:
+    """多 Key 管理：被限流或额度用尽时自动切换到下一个 Key"""
+    _lock = threading.Lock()
+    _current_index = 0
+
+    @classmethod
+    def get_current_key(cls):
+        """获取当前使用的 API Key"""
+        with cls._lock:
+            if not TWELVEDATA_API_KEYS:
+                return None
+            return TWELVEDATA_API_KEYS[cls._current_index % len(TWELVEDATA_API_KEYS)]
+
+    @classmethod
+    def switch_to_next(cls):
+        """切换到下一个 Key，返回是否成功切换（有下一个可用）"""
+        with cls._lock:
+            n = len(TWELVEDATA_API_KEYS)
+            if n <= 1:
+                return False
+            cls._current_index = (cls._current_index + 1) % n
+            return True
+
+    @classmethod
+    def current_index(cls):
+        with cls._lock:
+            return cls._current_index % len(TWELVEDATA_API_KEYS) if TWELVEDATA_API_KEYS else 0
+
+    @classmethod
+    def key_count(cls):
+        return len(TWELVEDATA_API_KEYS)
+
 
 # ==================== API请求节流控制 ====================
 class APIThrottle:
@@ -96,18 +145,21 @@ class DataFetcher:
         
         # API请求节流控制
         APIThrottle.wait_if_needed(API_MIN_INTERVAL)
-        
-        params = {
-            'symbol': self.td_symbol,
-            'interval': timeframe,
-            'outputsize': self.limit,
-            'apikey': TWELVEDATA_API_KEY,
-            'format': 'JSON',
-            'order': 'ASC',  # 升序，最新在末尾
-        }
-        
-        # 指数退避重试机制
+
+        # 指数退避重试 + 多 Key 切换（限流/额度用尽时换 Key 再试）
         for attempt in range(API_MAX_RETRIES):
+            apikey = TwelveDataKeyManager.get_current_key()
+            if not apikey:
+                print(f"  [TwelveData错误] 无可用 API Key")
+                return None
+            params = {
+                'symbol': self.td_symbol,
+                'interval': timeframe,
+                'outputsize': self.limit,
+                'apikey': apikey,
+                'format': 'JSON',
+                'order': 'ASC',  # 升序，最新在末尾
+            }
             try:
                 resp = requests.get(TWELVEDATA_URL, params=params, timeout=20)
                 resp.raise_for_status()
@@ -118,23 +170,27 @@ class DataFetcher:
                     code = data.get('code', '')
                     msg = data.get('message', '')
                     
-                    # API额度用尽 - 不重试
+                    # API额度用尽：尝试切换下一个 Key
                     if 'run out of API credits' in msg or 'API credits' in msg:
-                        print(f"  [TwelveData错误] {self.symbol} {timeframe}: API额度已用完")
-                        print(f"  ⚠️ TwelveData API今日额度已用完，请等待明天或升级到付费计划")
+                        print(f"  [TwelveData] {self.symbol} {timeframe}: 当前 Key 额度已用完 (Key#{TwelveDataKeyManager.current_index() + 1})")
+                        if TwelveDataKeyManager.switch_to_next():
+                            print(f"  [TwelveData] 已切换到下一个 Key (共 {TwelveDataKeyManager.key_count()} 个)，重试...")
+                            continue
+                        print(f"  ⚠️ 所有 API Key 额度已用完，请等待明天或添加更多 Key")
                         return None
                     
-                    # 429限流错误 - 使用指数退避重试
+                    # 429 限流：先尝试切换 Key，再退避重试
                     if str(code) == '429':
+                        if TwelveDataKeyManager.switch_to_next():
+                            print(f"  [限流] {self.symbol} {timeframe}: 已切换到下一 Key，重试...")
+                            continue
                         if attempt < API_MAX_RETRIES - 1:
-                            # 指数退避：2^attempt * 基础延迟，但不超过最大延迟
                             delay = min(API_RETRY_BASE_DELAY * (2 ** attempt), API_RETRY_MAX_DELAY)
                             print(f"  [限流] {self.symbol} {timeframe}: 等待 {delay:.1f}秒后重试 (尝试 {attempt+1}/{API_MAX_RETRIES})")
                             time.sleep(delay)
                             continue
-                        else:
-                            print(f"  [TwelveData错误] {self.symbol} {timeframe}: 达到最大重试次数，限流错误")
-                            return None
+                        print(f"  [TwelveData错误] {self.symbol} {timeframe}: 达到最大重试次数，限流错误")
+                        return None
                     
                     # 其他错误
                     print(f"  [TwelveData错误] {self.symbol} {timeframe}: code={code} {msg}")
@@ -232,11 +288,10 @@ class DataFetcher:
                 self.ema[tf] = self.calc_ema(df, EMA_PERIODS)
 
     def get_latest_price(self):
-        """获取当前最新成交价（使用最新K线的收盘价）"""
-        if len(self.data['15min']) > 0:
-            return self.data['15min'][-1]['close']
-        # 如果15分钟数据不可用，尝试其他周期
-        for tf in ['5min', '1h']:
+        """获取当前最新成交价（使用分析周期最新K线的收盘价）"""
+        if len(self.data.get(ANALYSIS_TIMEFRAME, [])) > 0:
+            return self.data[ANALYSIS_TIMEFRAME][-1]['close']
+        for tf in self.timeframes:
             if len(self.data[tf]) > 0:
                 return self.data[tf][-1]['close']
         return None
@@ -263,9 +318,9 @@ def check_trend(ema_dict):
     return None
 
 def get_overall_trend(fetcher):
-    """基于15分钟数据判断趋势，返回 'bull'/'bear'/'neutral'"""
-    trend_15m = check_trend(fetcher.ema.get('15min', {}))
-    return trend_15m if trend_15m else 'neutral'
+    """基于分析周期数据判断趋势，返回 'bull'/'bear'/'neutral'"""
+    trend = check_trend(fetcher.ema.get(ANALYSIS_TIMEFRAME, {}))
+    return trend if trend else 'neutral'
 
 # ==================== 支撑阻力计算模块 ====================
 def find_swing_points(df, window=SWING_WINDOW):
@@ -391,6 +446,80 @@ def fibonacci_levels(highs, lows, df):
         levels.append({'name': '斐波那契0.618', 'type': 'resistance', 'value': fib_618})
     return levels
 
+def get_trend_line_segments(df, highs, lows):
+    """
+    获取趋势线的两点坐标，用于绘图。
+    返回 (support_segment, resistance_segment)，每个为 ((idx0, price0), (idx1, price1)) 或 None。
+    """
+    support_seg = None
+    resistance_seg = None
+    current_idx = len(df) - 1
+
+    if len(lows) >= 2:
+        l1_idx, l1_price = lows[-1]
+        for i in range(len(lows) - 2, -1, -1):
+            l0_idx, l0_price = lows[i]
+            if l0_price < l1_price:
+                k = (l1_price - l0_price) / (l1_idx - l0_idx)
+                support_val = l0_price + k * (current_idx - l0_idx)
+                support_seg = ((l0_idx, l0_price), (current_idx, support_val))
+                break
+
+    if len(highs) >= 2:
+        h1_idx, h1_price = highs[-1]
+        for i in range(len(highs) - 2, -1, -1):
+            h0_idx, h0_price = highs[i]
+            if h0_price > h1_price:
+                k = (h1_price - h0_price) / (h1_idx - h0_idx)
+                resistance_val = h0_price + k * (current_idx - h0_idx)
+                resistance_seg = ((h0_idx, h0_price), (current_idx, resistance_val))
+                break
+
+    return support_seg, resistance_seg
+
+
+def get_channel_line_segments(df, support_seg, resistance_seg):
+    """
+    根据趋势线计算通道线（与趋势线平行，过波段极值点）。
+    返回 (upper_channel_seg, lower_channel_seg)，用于上升通道上轨、下降通道下轨；无则为 None。
+    """
+    upper_seg = None
+    lower_seg = None
+    current_idx = len(df) - 1
+    if current_idx < 0:
+        return upper_seg, lower_seg
+
+    # 上升通道上轨：与支撑线平行，过 [l0_idx, current_idx] 内最高点
+    if support_seg:
+        (i0, p0), (i1, p1) = support_seg
+        if i1 != i0:
+            k = (p1 - p0) / (i1 - i0)
+            start_i, end_i = max(0, int(i0)), min(current_idx, len(df) - 1)
+            slice_high = df['high'].iloc[start_i:end_i + 1]
+            if len(slice_high) > 0:
+                max_high_idx = start_i + int(slice_high.values.argmax())
+                max_high = float(df['high'].iloc[max_high_idx])
+                p_at_0 = max_high + k * (i0 - max_high_idx)
+                p_at_1 = max_high + k * (i1 - max_high_idx)
+                upper_seg = ((i0, p_at_0), (i1, p_at_1))
+
+    # 下降通道下轨：与阻力线平行，过 [h0_idx, current_idx] 内最低点
+    if resistance_seg:
+        (i0, p0), (i1, p1) = resistance_seg
+        if i1 != i0:
+            k = (p1 - p0) / (i1 - i0)
+            start_i, end_i = max(0, int(i0)), min(current_idx, len(df) - 1)
+            slice_low = df['low'].iloc[start_i:end_i + 1]
+            if len(slice_low) > 0:
+                min_low_idx = start_i + int(slice_low.values.argmin())
+                min_low = float(df['low'].iloc[min_low_idx])
+                p_at_0 = min_low + k * (i0 - min_low_idx)
+                p_at_1 = min_low + k * (i1 - min_low_idx)
+                lower_seg = ((i0, p_at_0), (i1, p_at_1))
+
+    return upper_seg, lower_seg
+
+
 def compute_all_levels(df, fetcher):
     """汇总所有支撑阻力位"""
     highs, lows = find_swing_points(df)
@@ -413,7 +542,7 @@ def compute_all_levels(df, fetcher):
     levels.extend(last_extremes(highs, lows))
 
     # EMA20（类型依赖整体趋势，后面在提醒时动态判断，这里先标记为通用）
-    ema20 = fetcher.ema.get('15min', {}).get('EMA20')
+    ema20 = fetcher.ema.get(ANALYSIS_TIMEFRAME, {}).get('EMA20')
     if ema20:
         levels.append({'name': 'EMA20', 'type': 'dynamic', 'value': ema20})
 
@@ -603,6 +732,218 @@ def save_monitor_summary(symbol, price, trend, all_levels, near_levels):
         print(f"[存储] 保存监控摘要失败: {e}")
         return False
 
+
+# ==================== 通知前K线图绘制模块 ====================
+def draw_opportunity_chart(symbol, df_15m, price, all_levels, near_levels, highs, lows, trend):
+    """
+    在通知提醒前本地绘制K线图：含趋势线、水平支撑/阻力、斐波那契位、当前价与关键价位标注。
+    返回保存的图片路径，失败返回 None。
+    """
+    try:
+        import matplotlib
+        matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
+        import matplotlib.dates as mdates
+        import matplotlib.patches as mpatches
+
+        plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'SimHei', 'Arial Unicode MS', 'DejaVu Sans']
+        plt.rcParams['axes.unicode_minus'] = False
+
+        ensure_data_dir()
+        os.makedirs(MONITOR_CHARTS_DIR, exist_ok=True)
+
+        # 准备绘图用 DataFrame：索引为时间
+        if 'timestamp' in df_15m.columns:
+            plot_df = df_15m.set_index('timestamp').copy()
+        else:
+            plot_df = df_15m.copy()
+        plot_df.index = pd.to_datetime(plot_df.index)
+        # 列名统一为小写
+        for c in ['open', 'high', 'low', 'close']:
+            if c not in plot_df.columns and c.capitalize() in plot_df.columns:
+                plot_df[c] = plot_df[c.capitalize()]
+        if 'close' not in plot_df.columns:
+            return None
+
+        # 计算 EMA 用于图中显示
+        for p in EMA_PERIODS:
+            plot_df[f'ema_{p}'] = plot_df['close'].ewm(span=p, adjust=False).mean()
+
+        # 最近约 120 根 K 线
+        show_bars = min(120, len(plot_df))
+        chart_df = plot_df.iloc[-show_bars:].copy()
+
+        fig, ax = plt.subplots(figsize=(14, 7))
+        fig.patch.set_facecolor('#1a1a2e')
+        ax.set_facecolor('#16213e')
+        ax.tick_params(colors='#e0e0e0')
+        for spine in ax.spines.values():
+            spine.set_color('#444466')
+
+        # ----- K 线（蜡烛图） -----
+        for i in range(len(chart_df)):
+            dt = chart_df.index[i]
+            op = float(chart_df['open'].iloc[i])
+            hi = float(chart_df['high'].iloc[i])
+            lo = float(chart_df['low'].iloc[i])
+            cl = float(chart_df['close'].iloc[i])
+            is_bull = cl >= op
+            color = '#26a69a' if is_bull else '#ef5350'
+            ax.plot([dt, dt], [lo, hi], color=color, linewidth=0.8, zorder=2)
+            body_lo, body_hi = min(op, cl), max(op, cl)
+            body_h = max(body_hi - body_lo, (hi - lo) * 0.002)
+            rect = mpatches.Rectangle(
+                (mdates.date2num(dt) - 0.0015, body_lo), 0.003, body_h,
+                facecolor=color, edgecolor=color, alpha=0.9, zorder=3
+            )
+            ax.add_patch(rect)
+
+        # ----- EMA -----
+        ax.plot(chart_df.index, chart_df['ema_20'], color='#42a5f5', linewidth=1.0, label='EMA20', zorder=4)
+        ax.plot(chart_df.index, chart_df['ema_50'], color='#ffa726', linewidth=1.0, label='EMA50', zorder=4)
+        ax.plot(chart_df.index, chart_df['ema_100'], color='#9467bd', linewidth=1.0, label='EMA100', zorder=4)
+
+        # ----- 趋势线（线段） -----
+        support_seg, resistance_seg = get_trend_line_segments(plot_df.reset_index(drop=True), highs, lows)
+        # 绘图时使用 bar 索引对应到 chart_df 的时间：plot_df 与 chart_df 的对应关系是末尾对齐
+        base_idx = len(plot_df) - len(chart_df)
+        def idx_to_time(bar_idx):
+            if bar_idx < base_idx:
+                bar_idx = base_idx
+            if bar_idx >= len(plot_df):
+                bar_idx = len(plot_df) - 1
+            return plot_df.index[bar_idx]
+
+        if support_seg:
+            (i0, p0), (i1, p1) = support_seg
+            t0, t1 = idx_to_time(i0), idx_to_time(i1)
+            ax.plot([t0, t1], [p0, p1], color='#26a69a', linestyle='-', linewidth=1.5, label='上升趋势线(支撑)', zorder=5)
+        if resistance_seg:
+            (i0, p0), (i1, p1) = resistance_seg
+            t0, t1 = idx_to_time(i0), idx_to_time(i1)
+            ax.plot([t0, t1], [p0, p1], color='#ef5350', linestyle='-', linewidth=1.5, label='下降趋势线(阻力)', zorder=5)
+
+        # ----- 通道线（与趋势线平行，过波段极值） -----
+        df_for_channel = plot_df.reset_index(drop=True)
+        upper_channel_seg, lower_channel_seg = get_channel_line_segments(df_for_channel, support_seg, resistance_seg)
+        if upper_channel_seg:
+            (i0, p0), (i1, p1) = upper_channel_seg
+            t0, t1 = idx_to_time(i0), idx_to_time(i1)
+            ax.plot([t0, t1], [p0, p1], color='#81c784', linestyle='--', linewidth=1.2, alpha=0.9, label='上升通道上轨', zorder=5)
+        if lower_channel_seg:
+            (i0, p0), (i1, p1) = lower_channel_seg
+            t0, t1 = idx_to_time(i0), idx_to_time(i1)
+            ax.plot([t0, t1], [p0, p1], color='#e57373', linestyle='--', linewidth=1.2, alpha=0.9, label='下降通道下轨', zorder=5)
+
+        # ----- 最近一个波段最高值、最低值（上涨/下降趋势均绘制） -----
+        wave_high = highs[-1][1] if highs else None
+        wave_low = lows[-1][1] if lows else None
+        if wave_high is not None:
+            ax.axhline(wave_high, color='#ffb74d', linestyle='-.', linewidth=1.2, alpha=0.9, label=f'波段高点 {format_price(wave_high, symbol)}', zorder=5)
+        if wave_low is not None:
+            ax.axhline(wave_low, color='#64b5f6', linestyle='-.', linewidth=1.2, alpha=0.9, label=f'波段低点 {format_price(wave_low, symbol)}', zorder=5)
+
+        # ----- 斐波那契 50%、0.618 回调位（明确绘制并标注） -----
+        fib_50 = next((lev['value'] for lev in all_levels if lev.get('name') and '0.5' in lev.get('name', '') and '斐波' in lev.get('name', '')), None)
+        fib_618 = next((lev['value'] for lev in all_levels if '0.618' in lev.get('name', '')), None)
+        if fib_50 is not None:
+            ax.axhline(fib_50, color='#ab47bc', linestyle=':', linewidth=1.2, alpha=0.9, zorder=5)
+        if fib_618 is not None:
+            ax.axhline(fib_618, color='#7e57c2', linestyle=':', linewidth=1.2, alpha=0.9, zorder=5)
+
+        # ----- 水平支撑/阻力、斐波那契位 -----
+        for level in all_levels:
+            val = level.get('value')
+            if val is None:
+                continue
+            name = level.get('name', '')
+            ltype = level.get('type', '')
+            if '趋势线' in name:
+                continue  # 已在上面画过
+            if '斐波' in name or '0.5' in name or '0.618' in name:
+                ax.axhline(val, color='#ab47bc', linestyle=':', linewidth=1.0, alpha=0.85, zorder=5)
+            elif ltype == 'support':
+                ax.axhline(val, color='#26a69a', linestyle='--', linewidth=1.0, alpha=0.85, zorder=5)
+            elif ltype == 'resistance':
+                ax.axhline(val, color='#ef5350', linestyle='--', linewidth=1.0, alpha=0.85, zorder=5)
+            elif ltype == 'dynamic':
+                ax.axhline(val, color='#42a5f5', linestyle='-.', linewidth=1.0, alpha=0.8, zorder=5)
+
+        # ----- 当前价格线 -----
+        ax.axhline(price, color='#ffeb3b', linestyle='-', linewidth=2.0, alpha=0.95, label=f'当前价 {format_price(price, symbol)}', zorder=6)
+
+        # ----- 图内标注：当前价与关键位置价格 -----
+        last_time = chart_df.index[-1]
+        ax.scatter([last_time], [price], color='#ffeb3b', s=80, zorder=7, edgecolors='white', linewidths=1.5)
+        ax.annotate(
+            f'当前价 {format_price(price, symbol)}',
+            xy=(last_time, price), xytext=(12, 0), textcoords='offset points',
+            color='#ffeb3b', fontsize=9, fontweight='bold',
+            bbox=dict(boxstyle='round,pad=0.3', facecolor='#1a1a2e', alpha=0.9),
+            zorder=8
+        )
+        # 标注接近的关键位置
+        for level in near_levels:
+            val = level.get('value')
+            if val is None:
+                continue
+            ax.axhline(val, color='#ff9800', linestyle='-', linewidth=0.8, alpha=0.5, zorder=5)
+            ax.scatter([last_time], [val], color='#ff9800', s=50, zorder=7)
+            ax.annotate(
+                f"{level.get('name', '')} {format_price(val, symbol)}",
+                xy=(last_time, val), xytext=(12, 0), textcoords='offset points',
+                color='#ff9800', fontsize=8,
+                bbox=dict(boxstyle='round,pad=0.2', facecolor='#1a1a2e', alpha=0.8),
+                zorder=8
+            )
+        # 斐波那契 50%、61.8% 图内标注
+        if fib_50 is not None:
+            ax.scatter([last_time], [fib_50], color='#ab47bc', s=40, zorder=7)
+            ax.annotate(
+                f'Fib 50% {format_price(fib_50, symbol)}',
+                xy=(last_time, fib_50), xytext=(12, 0), textcoords='offset points',
+                color='#ab47bc', fontsize=8,
+                bbox=dict(boxstyle='round,pad=0.2', facecolor='#1a1a2e', alpha=0.8),
+                zorder=8
+            )
+        if fib_618 is not None:
+            ax.scatter([last_time], [fib_618], color='#7e57c2', s=40, zorder=7)
+            ax.annotate(
+                f'Fib 61.8% {format_price(fib_618, symbol)}',
+                xy=(last_time, fib_618), xytext=(12, 0), textcoords='offset points',
+                color='#7e57c2', fontsize=8,
+                bbox=dict(boxstyle='round,pad=0.2', facecolor='#1a1a2e', alpha=0.8),
+                zorder=8
+            )
+
+        trend_cn = {'bull': '看涨', 'bear': '看跌', 'neutral': '中性'}.get(trend, trend)
+        tf_label = _timeframe_display_name(ANALYSIS_TIMEFRAME)
+        ax.set_title(
+            f'{symbol}  {tf_label}K线  趋势: {trend_cn}  价格: {format_price(price, symbol)}  '
+            f'时间: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}',
+            color='#e0e0e0', fontsize=11, fontweight='bold', pad=10
+        )
+        ax.set_ylabel('价格', color='#e0e0e0', fontsize=10)
+        ax.legend(loc='upper left', fontsize=8, facecolor='#1a1a2e', labelcolor='#e0e0e0', framealpha=0.8)
+        ax.grid(True, alpha=0.15, color='#444466')
+        ax.xaxis.set_major_formatter(mdates.DateFormatter('%m-%d %H:%M'))
+        plt.xticks(rotation=25)
+        plt.tight_layout(rect=[0, 0, 1, 0.96])
+
+        ts = datetime.now().strftime('%Y%m%d_%H%M%S')
+        filename = f"{symbol}_{ts}.png"
+        filepath = os.path.join(MONITOR_CHARTS_DIR, filename)
+        plt.savefig(filepath, dpi=100, bbox_inches='tight', facecolor=fig.get_facecolor())
+        plt.close(fig)
+        print(f"  [图表] 已保存: {filepath}")
+        return filepath
+    except Exception as e:
+        print(f"  [图表保存失败] {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
+
 # ==================== 提醒模块（企业微信） ====================
 def send_wework_msg(message, msgtype='text'):
     """发送企业微信机器人消息"""
@@ -633,6 +974,43 @@ def send_wework_msg(message, msgtype='text'):
         print(f"企业微信发送异常: {e}")
         return False
 
+
+def send_wework_image(image_path, max_size_mb=2):
+    """
+    发送企业微信机器人图片消息。图片需为 JPG/PNG，不超过 2MB。
+    若文件超过 max_size_mb，先尝试缩小后发送（此处仅校验大小，超限则跳过发送并提示）。
+    """
+    if not image_path or not os.path.isfile(image_path):
+        return False
+    try:
+        with open(image_path, 'rb') as f:
+            raw = f.read()
+        size_mb = len(raw) / (1024 * 1024)
+        if size_mb > max_size_mb:
+            print(f"  [企业微信] 图片过大 ({size_mb:.2f}MB > {max_size_mb}MB)，跳过发送")
+            return False
+        base64_content = base64.b64encode(raw).decode('ascii')
+        md5_content = hashlib.md5(raw).hexdigest()
+        url = WEWORK_WEBHOOK_URL
+        headers = {'Content-Type': 'application/json'}
+        data = {
+            "msgtype": "image",
+            "image": {
+                "base64": base64_content,
+                "md5": md5_content
+            }
+        }
+        response = requests.post(url, headers=headers, json=data, timeout=15)
+        if response.status_code != 200:
+            print(f"企业微信图片发送失败: {response.text}")
+            return False
+        print(f"  [企业微信] 已发送K线图")
+        return True
+    except Exception as e:
+        print(f"企业微信发送图片异常: {e}")
+        return False
+
+
 def get_trend_name(trend):
     """将趋势代码转换为中文名称"""
     trend_map = {
@@ -659,26 +1037,45 @@ def format_price(price, symbol):
         return f"{price:.4f}"
 
 def format_opportunity_msg_summary(symbol, price, trend, near_levels, reversal_info=None):
-    """格式化支撑阻力机会汇总通知消息"""
+    """格式化支撑阻力机会汇总通知消息。关键位置+反转形态时使用重点通知格式。"""
     trend_emoji = {'bull': '🟢', 'bear': '🔴'}
     trend_name = {'bull': '看涨', 'bear': '看跌'}
-    
+    pattern_cn = {
+        'single_candle_hammer': '锤子线',
+        'bullish_engulfing': '看涨吞没',
+        'bearish_engulfing': '看跌吞没'
+    }
     emoji = trend_emoji.get(trend, '')
     trend_text = trend_name.get(trend, '')
-    
-    # 按类型分组
     support_levels = [l for l in near_levels if l['type'] == 'support']
     resistance_levels = [l for l in near_levels if l['type'] == 'resistance']
-    
-    msg = f"""**📊 支撑阻力机会通知**
+    has_reversal_at_key = bool(near_levels and reversal_info and reversal_info[0])
+
+    if has_reversal_at_key:
+        # 重点通知：关键位置附近出现反转形态
+        pattern_name = reversal_info[1]
+        pattern_text = pattern_cn.get(pattern_name, pattern_name)
+        msg = f"""**🚨 重点通知：关键位置附近出现反转形态**
+
+**⚠️ 此信号需重点关注**：价格接近支撑/阻力关键位，且出现 **{pattern_text}** 反转形态，潜在转折概率较高。
 
 **品种**: {symbol}
 **当前价格**: {format_price(price, symbol)}
 **趋势方向**: {emoji} {trend_text}
-**分析周期**: 15分钟
+**反转形态**: {pattern_text}
+**分析周期**: {_timeframe_display_name(ANALYSIS_TIMEFRAME)}
 
 """
-    
+    else:
+        msg = f"""**📊 支撑阻力机会通知**
+
+**品种**: {symbol}
+**当前价格**: {format_price(price, symbol)}
+**趋势方向**: {emoji} {trend_text}
+**分析周期**: {_timeframe_display_name(ANALYSIS_TIMEFRAME)}
+
+"""
+
     # 支撑位
     if support_levels:
         msg += "**🔵 接近支撑位:**\n"
@@ -686,7 +1083,6 @@ def format_opportunity_msg_summary(symbol, price, trend, near_levels, reversal_i
             distance_pct = abs(price - level['value']) / price * 100 if price else 0
             msg += f"  • {level['name']}: {format_price(level['value'], symbol)} (距离: {distance_pct:.3f}%)\n"
         msg += "\n"
-    
     # 阻力位
     if resistance_levels:
         msg += "**🔴 接近阻力位:**\n"
@@ -694,36 +1090,36 @@ def format_opportunity_msg_summary(symbol, price, trend, near_levels, reversal_i
             distance_pct = abs(price - level['value']) / price * 100 if price else 0
             msg += f"  • {level['name']}: {format_price(level['value'], symbol)} (距离: {distance_pct:.3f}%)\n"
         msg += "\n"
-    
-    # 反转形态
-    if reversal_info and reversal_info[0]:
+    # 非重点通知时仍单独标出反转形态（若存在）
+    if reversal_info and reversal_info[0] and not has_reversal_at_key:
         pattern_name = reversal_info[1]
-        pattern_cn = {
-            'single_candle_hammer': '锤子线',
-            'bullish_engulfing': '看涨吞没',
-            'bearish_engulfing': '看跌吞没'
-        }
         msg += f"**⚠️ 反转形态**: {pattern_cn.get(pattern_name, pattern_name)}\n\n"
-    
     msg += f"**时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-    
     return msg
 
 # ==================== 主监控循环 ====================
+def _timeframe_display_name(tf):
+    """将 twelvedata 周期格式转为中文显示"""
+    _names = {'1min': '1分钟', '5min': '5分钟', '15min': '15分钟', '30min': '30分钟',
+              '45min': '45分钟', '1h': '1小时', '2h': '2小时', '4h': '4小时', '1day': '1日'}
+    return _names.get(tf, tf)
+
+
 def send_startup_notification():
     """发送启动通知"""
     symbol_list = ', '.join(SYMBOLS.keys())
+    tf_display = _timeframe_display_name(ANALYSIS_TIMEFRAME)
     msg = f"""**🚀 支撑阻力监控系统已启动**
 
 **监控品种**: {symbol_list}
-**分析周期**: 15分钟
+**分析周期**: {tf_display}（{ANALYSIS_TIMEFRAME}）
+**监控间隔**: {MONITOR_INTERVAL_SECONDS} 秒/轮
 **通知条件**: 仅在看涨/看跌趋势时通知，中性趋势不通知
 **启动时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
-系统将实时监控支撑阻力机会并推送汇总通知。"""
-    
+系统将按设定间隔监控支撑阻力机会并推送汇总通知。"""
     send_wework_msg(msg, msgtype='markdown')
-    print(f"[启动通知] 已发送，监控品种: {symbol_list}")
+    print(f"[启动通知] 已发送，监控品种: {symbol_list}，分析周期: {tf_display}，监控间隔: {MONITOR_INTERVAL_SECONDS}秒")
 
 def monitor_symbol(symbol, td_symbol, fetchers, last_alerts):
     """监控单个品种，汇总所有接近的支撑阻力位一次性通知"""
@@ -739,12 +1135,11 @@ def monitor_symbol(symbol, td_symbol, fetchers, last_alerts):
             print(f"[{symbol}] 无法获取价格数据，跳过本次检查")
             return
 
-        # 获取15分钟K线DataFrame
-        if len(fetcher.data['15min']) == 0:
-            print(f"[{symbol}] 15分钟数据为空，跳过本次检查")
+        # 获取分析周期K线 DataFrame
+        if len(fetcher.data.get(ANALYSIS_TIMEFRAME, [])) == 0:
+            print(f"[{symbol}] {ANALYSIS_TIMEFRAME} 数据为空，跳过本次检查")
             return
-            
-        df_15m = pd.DataFrame(fetcher.data['15min'])
+        df_15m = pd.DataFrame(fetcher.data[ANALYSIS_TIMEFRAME])
 
         # 计算所有支撑阻力位
         levels = compute_all_levels(df_15m, fetcher)
@@ -803,18 +1198,25 @@ def monitor_symbol(symbol, td_symbol, fetchers, last_alerts):
         # 保存监控数据到本地（无论是否有接近的位置、无论趋势如何都保存）
         save_monitor_summary(symbol, price, trend, levels, near_levels)
         
-        # 如果有接近的位置且趋势不是中性，汇总发送通知并保存详细记录
+        # 如果有接近的位置且趋势不是中性，先本地绘图再发送通知并保存详细记录
         if near_levels and should_notify:
+            # 先绘制K线图（趋势线、通道线、波段高低点、斐波50%/61.8%、当前价与关键价位）
+            highs, lows = find_swing_points(df_15m)
+            chart_path = draw_opportunity_chart(symbol, df_15m, price, levels, near_levels, highs, lows, trend)
             # 格式化并发送汇总提醒
             msg = format_opportunity_msg_summary(symbol, price, trend, near_levels, reversal_info)
             send_wework_msg(msg, msgtype='markdown')
+            # 通知时是否发送K线图（由 WEWORK_SEND_CHART_IMAGE 控制）
+            if WEWORK_SEND_CHART_IMAGE and chart_path:
+                send_wework_image(chart_path)
             
             # 保存详细监控记录（有接近位置的情况）
             save_monitor_record(symbol, price, trend, near_levels, reversal_info)
             
-            # 控制台输出
+            # 控制台输出（关键位置+反转形态时标为重点）
             level_names = [l['name'] for l in near_levels]
-            console_msg = (f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {symbol} | "
+            focus_tag = "【重点】关键位+反转形态 | " if (near_levels and has_reversal) else ""
+            console_msg = (f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {focus_tag}{symbol} | "
                           f"趋势: {get_trend_name(trend)} | 价格: {format_price(price, symbol)} | "
                           f"接近位置: {', '.join(level_names)}")
             if has_reversal:
@@ -845,6 +1247,7 @@ def main():
     ensure_data_dir()
     print(f"[存储] 监控数据将保存到: {MONITOR_DATA_DIR}")
     print(f"[存储] 数据保留天数: {DATA_RETENTION_DAYS}天")
+    print(f"[TwelveData] 已加载 {TwelveDataKeyManager.key_count()} 个 API Key（限流/额度用尽时自动切换）")
     
     # 初始化所有品种的数据获取器
     fetchers = {}
@@ -858,7 +1261,7 @@ def main():
     # 发送启动通知
     send_startup_notification()
     
-    print(f"\n开始监控 {len(SYMBOLS)} 个品种...")
+    print(f"\n开始监控 {len(SYMBOLS)} 个品种 | 分析周期: {_timeframe_display_name(ANALYSIS_TIMEFRAME)} | 每轮间隔: {MONITOR_INTERVAL_SECONDS} 秒")
     print("=" * 60)
     
     # 首次数据加载（强制刷新）
@@ -907,8 +1310,8 @@ def main():
                 # 品种间延迟，确保API请求间隔
                 time.sleep(max(API_MIN_INTERVAL, 2))
             
-            # 每分钟检查一次
-            time.sleep(60)
+            # 按配置间隔进行下一轮监控
+            time.sleep(MONITOR_INTERVAL_SECONDS)
             
         except KeyboardInterrupt:
             print("\n收到停止信号，正在退出...")
@@ -917,7 +1320,7 @@ def main():
             print(f"主循环异常: {e}")
             import traceback
             traceback.print_exc()
-            time.sleep(60)
+            time.sleep(MONITOR_INTERVAL_SECONDS)
 
 if __name__ == '__main__':
     # 设置Windows控制台UTF-8编码

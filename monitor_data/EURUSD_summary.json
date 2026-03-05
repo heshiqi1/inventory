@@ -122,5 +122,1262 @@
       "has_opportunity": false
     },
     "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:24:22",
+    "timestamp_unix": 1772691862.3798451,
+    "symbol": "EURUSD",
+    "price": 1.15922,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:25:34",
+    "timestamp_unix": 1772691934.6283166,
+    "symbol": "EURUSD",
+    "price": 1.15922,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:26:44",
+    "timestamp_unix": 1772692004.79504,
+    "symbol": "EURUSD",
+    "price": 1.15922,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:27:56",
+    "timestamp_unix": 1772692076.9654288,
+    "symbol": "EURUSD",
+    "price": 1.15922,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:29:10",
+    "timestamp_unix": 1772692150.1443205,
+    "symbol": "EURUSD",
+    "price": 1.15922,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:30:20",
+    "timestamp_unix": 1772692220.3183107,
+    "symbol": "EURUSD",
+    "price": 1.15922,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:31:36",
+    "timestamp_unix": 1772692296.1151094,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1603166666666667,
+        "distance_pct": 0.06525463681626986
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:32:52",
+    "timestamp_unix": 1772692372.1681383,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:34:02",
+    "timestamp_unix": 1772692442.3282292,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:35:15",
+    "timestamp_unix": 1772692515.0591395,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:36:28",
+    "timestamp_unix": 1772692588.7091086,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:37:38",
+    "timestamp_unix": 1772692658.9177315,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:38:51",
+    "timestamp_unix": 1772692731.7249224,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:40:05",
+    "timestamp_unix": 1772692805.4901922,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:41:15",
+    "timestamp_unix": 1772692875.7277586,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:42:29",
+    "timestamp_unix": 1772692949.4172218,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:43:44",
+    "timestamp_unix": 1772693024.254394,
+    "symbol": "EURUSD",
+    "price": 1.15956,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:45:15",
+    "timestamp_unix": 1772693115.7569394,
+    "symbol": "EURUSD",
+    "price": 1.16008,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1603166666666667,
+        "distance_pct": 0.02040089189251283
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.1611237405990895,
+        "distance_pct": 0.08997143292613574
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:46:33",
+    "timestamp_unix": 1772693193.5666642,
+    "symbol": "EURUSD",
+    "price": 1.16008,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:47:43",
+    "timestamp_unix": 1772693263.8283513,
+    "symbol": "EURUSD",
+    "price": 1.16008,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:48:57",
+    "timestamp_unix": 1772693337.1079288,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.160098,
+        "distance_pct": 0.013621394210054186
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.1610015249410455,
+        "distance_pct": 0.09151550434035378
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.1601050000000002,
+        "distance_pct": 0.014224873700380433
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.16041298,
+        "distance_pct": 0.040776247047266866
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:50:19",
+    "timestamp_unix": 1772693419.8647816,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:51:36",
+    "timestamp_unix": 1772693496.2810075,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:52:50",
+    "timestamp_unix": 1772693570.868757,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:54:07",
+    "timestamp_unix": 1772693647.8758929,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:55:18",
+    "timestamp_unix": 1772693718.2082279,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:56:32",
+    "timestamp_unix": 1772693792.799893,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:57:49",
+    "timestamp_unix": 1772693869.6275425,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:59:00",
+    "timestamp_unix": 1772693940.1458707,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 15:00:14",
+    "timestamp_unix": 1772694014.6828225,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 15:01:36",
+    "timestamp_unix": 1772694096.2795546,
+    "symbol": "EURUSD",
+    "price": 1.15994,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 5,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 15:19:45",
+    "timestamp_unix": 1772695185.396334,
+    "symbol": "EURUSD",
+    "price": 1.16031,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.1609382011182425,
+        "distance_pct": 0.05414080015190573
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:31:21",
+    "timestamp_unix": 1772695881.5100129,
+    "symbol": "EURUSD",
+    "price": 1.16076,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 8,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 1.1602933333333334,
+        "distance_pct": 0.040203544803974575
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1604925000000001,
+        "distance_pct": 0.02304524621798348
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.16008,
+        "distance_pct": 0.05858230814294203
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16141,
+        "distance_pct": 0.05599779454840272
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.16107,
+        "distance_pct": 0.026706640476931706
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 1.16008,
+        "distance_pct": 0.05858230814294203
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.1605750000000001,
+        "distance_pct": 0.015937833832995598
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.16069182,
+        "distance_pct": 0.005873737895859029
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:34:02",
+    "timestamp_unix": 1772696042.8259323,
+    "symbol": "EURUSD",
+    "price": 1.16087,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1614328571428572,
+        "distance_pct": 0.04848580313532844
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.08355802113931063
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.08355802113931063
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.1609704812836497,
+        "distance_pct": 0.008655687859070301
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:39:58",
+    "timestamp_unix": 1772696398.4316452,
+    "symbol": "EURUSD",
+    "price": 1.16087,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 15:46:12",
+    "timestamp_unix": 1772696772.4627886,
+    "symbol": "EURUSD",
+    "price": 1.16087,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 15:51:26",
+    "timestamp_unix": 1772697086.2995121,
+    "symbol": "EURUSD",
+    "price": 1.16093,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1612971428571428,
+        "distance_pct": 0.03162489186624415
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.07838543236887377
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.07838543236887377
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.161022634993009,
+        "distance_pct": 0.007979377999452525
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:56:41",
+    "timestamp_unix": 1772697401.1748948,
+    "symbol": "EURUSD",
+    "price": 1.16093,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:01:54",
+    "timestamp_unix": 1772697714.2017186,
+    "symbol": "EURUSD",
+    "price": 1.16042,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.1614233333333333,
+        "distance_pct": 0.08646294732366255
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.160937667488918,
+        "distance_pct": 0.04461035564002832
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:07:08",
+    "timestamp_unix": 1772698028.9215412,
+    "symbol": "EURUSD",
+    "price": 1.16042,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:12:22",
+    "timestamp_unix": 1772698342.08947,
+    "symbol": "EURUSD",
+    "price": 1.16042,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:17:35",
+    "timestamp_unix": 1772698655.180626,
+    "symbol": "EURUSD",
+    "price": 1.15923,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:23:00",
+    "timestamp_unix": 1772698980.9615452,
+    "symbol": "EURUSD",
+    "price": 1.15923,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:28:24",
+    "timestamp_unix": 1772699304.1461148,
+    "symbol": "EURUSD",
+    "price": 1.15923,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:33:37",
+    "timestamp_unix": 1772699617.1778622,
+    "symbol": "EURUSD",
+    "price": 1.15866,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 8,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:38:52",
+    "timestamp_unix": 1772699932.2483387,
+    "symbol": "EURUSD",
+    "price": 1.15866,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 8,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:44:05",
+    "timestamp_unix": 1772700245.659618,
+    "symbol": "EURUSD",
+    "price": 1.15866,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 8,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:49:19",
+    "timestamp_unix": 1772700559.3580294,
+    "symbol": "EURUSD",
+    "price": 1.15966,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 5,
+      "resistance_levels_count": 6,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.160396763731027,
+        "distance_pct": 0.06353273640783996
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.15993,
+        "distance_pct": 0.023282686304605876
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.16032176,
+        "distance_pct": 0.05706500181088136
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:54:38",
+    "timestamp_unix": 1772700878.2010539,
+    "symbol": "EURUSD",
+    "price": 1.15966,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 5,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:59:52",
+    "timestamp_unix": 1772701192.8127434,
+    "symbol": "EURUSD",
+    "price": 1.15966,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 5,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 17:29:43",
+    "timestamp_unix": 1772702983.8893297,
+    "symbol": "EURUSD",
+    "price": 1.16296,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 13,
+      "support_levels_count": 5,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.09630597784962595
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.16302,
+        "distance_pct": 0.0051592488133683865
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:34:57",
+    "timestamp_unix": 1772703297.5398958,
+    "symbol": "EURUSD",
+    "price": 1.16241,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.049036054404208454
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.16302,
+        "distance_pct": 0.05247718102906888
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.161455,
+        "distance_pct": 0.08215689816846374
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:55:43",
+    "timestamp_unix": 1772704543.488652,
+    "symbol": "EURUSD",
+    "price": 1.16203,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.016350696625725022
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.16302,
+        "distance_pct": 0.08519573504987363
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.161455,
+        "distance_pct": 0.04948237136734785
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:56:46",
+    "timestamp_unix": 1772704606.3330877,
+    "symbol": "EURUSD",
+    "price": 1.16188,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.0034426963197610773
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.16302,
+        "distance_pct": 0.09811684511308559
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.161455,
+        "distance_pct": 0.036578648397435166
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:01:56",
+    "timestamp_unix": 1772704916.8460486,
+    "symbol": "EURUSD",
+    "price": 1.16231,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.040436716538614526
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.16302,
+        "distance_pct": 0.061085252643441806
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.161455,
+        "distance_pct": 0.073560409873446
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:07:12",
+    "timestamp_unix": 1772705232.8563557,
+    "symbol": "EURUSD",
+    "price": 1.16231,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.040436716538614526
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.16302,
+        "distance_pct": 0.061085252643441806
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.161455,
+        "distance_pct": 0.073560409873446
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:12:28",
+    "timestamp_unix": 1772705548.6771495,
+    "symbol": "EURUSD",
+    "price": 1.16231,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.040436716538614526
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.16302,
+        "distance_pct": 0.061085252643441806
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.161455,
+        "distance_pct": 0.073560409873446
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:17:43",
+    "timestamp_unix": 1772705863.123133,
+    "symbol": "EURUSD",
+    "price": 1.16225,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 5,
+      "resistance_levels_count": 6,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 1.1628166666666668,
+        "distance_pct": 0.048756004875614226
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.0352764035276422
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.16317,
+        "distance_pct": 0.07915680791568354
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 1.16168,
+        "distance_pct": 0.049042804904276996
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.16316,
+        "distance_pct": 0.0782964078296379
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:23:00",
+    "timestamp_unix": 1772706180.457426,
+    "symbol": "EURUSD",
+    "price": 1.16225,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 5,
+      "resistance_levels_count": 6,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 1.1628166666666668,
+        "distance_pct": 0.048756004875614226
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.16184,
+        "distance_pct": 0.0352764035276422
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.16317,
+        "distance_pct": 0.07915680791568354
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 1.16168,
+        "distance_pct": 0.049042804904276996
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.16316,
+        "distance_pct": 0.0782964078296379
+      }
+    ]
   }
 ]

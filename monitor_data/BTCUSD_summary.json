@@ -152,5 +152,711 @@
         "distance_pct": 0.05311038863903886
       }
     ]
+  },
+  {
+    "timestamp": "2026-03-05 14:24:24",
+    "timestamp_unix": 1772691864.435715,
+    "symbol": "BTCUSD",
+    "price": 72502.33,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:25:36",
+    "timestamp_unix": 1772691936.6599357,
+    "symbol": "BTCUSD",
+    "price": 72502.33,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:26:46",
+    "timestamp_unix": 1772692006.826525,
+    "symbol": "BTCUSD",
+    "price": 72502.33,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:28:00",
+    "timestamp_unix": 1772692080.0205925,
+    "symbol": "BTCUSD",
+    "price": 72502.33,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:29:12",
+    "timestamp_unix": 1772692152.1773243,
+    "symbol": "BTCUSD",
+    "price": 72502.33,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:30:22",
+    "timestamp_unix": 1772692222.3532927,
+    "symbol": "BTCUSD",
+    "price": 72502.33,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:31:40",
+    "timestamp_unix": 1772692300.6793413,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:32:54",
+    "timestamp_unix": 1772692374.1995995,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:34:04",
+    "timestamp_unix": 1772692444.362535,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:35:18",
+    "timestamp_unix": 1772692518.2312517,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:36:30",
+    "timestamp_unix": 1772692590.7510743,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:37:40",
+    "timestamp_unix": 1772692660.9576643,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:38:55",
+    "timestamp_unix": 1772692735.0119066,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:40:07",
+    "timestamp_unix": 1772692807.5356705,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:41:17",
+    "timestamp_unix": 1772692877.7737887,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:42:33",
+    "timestamp_unix": 1772692953.721322,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:43:46",
+    "timestamp_unix": 1772693026.3041632,
+    "symbol": "BTCUSD",
+    "price": 72421.97,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.001546492038252126
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:45:21",
+    "timestamp_unix": 1772693121.6749928,
+    "symbol": "BTCUSD",
+    "price": 72462.0,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.05369711020949393
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:46:35",
+    "timestamp_unix": 1772693195.6212697,
+    "symbol": "BTCUSD",
+    "price": 72462.0,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.05369711020949393
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:47:45",
+    "timestamp_unix": 1772693265.8878148,
+    "symbol": "BTCUSD",
+    "price": 72462.0,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 5,
+      "resistance_levels_count": 9,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 72423.09,
+        "distance_pct": 0.05369711020949393
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:49:04",
+    "timestamp_unix": 1772693344.578293,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:50:21",
+    "timestamp_unix": 1772693421.9307125,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:51:38",
+    "timestamp_unix": 1772693498.3218565,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:52:54",
+    "timestamp_unix": 1772693574.9301915,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:54:09",
+    "timestamp_unix": 1772693649.9631243,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:55:20",
+    "timestamp_unix": 1772693720.245711,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:56:37",
+    "timestamp_unix": 1772693797.0116127,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:57:51",
+    "timestamp_unix": 1772693871.7325475,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:59:02",
+    "timestamp_unix": 1772693942.247758,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:00:18",
+    "timestamp_unix": 1772694018.721535,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:01:38",
+    "timestamp_unix": 1772694098.3782992,
+    "symbol": "BTCUSD",
+    "price": 72540.6,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 15,
+      "support_levels_count": 7,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 72559.73,
+        "distance_pct": 0.02637143889075925
+      }
+    ]
   }
 ]

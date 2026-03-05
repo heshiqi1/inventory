@@ -107,5 +107,1319 @@
       "has_opportunity": false
     },
     "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:24:28",
+    "timestamp_unix": 1772691868.5240254,
+    "symbol": "GBPUSD",
+    "price": 1.33162,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.3326875,
+        "distance_pct": 0.08016551268379861
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:25:40",
+    "timestamp_unix": 1772691940.724707,
+    "symbol": "GBPUSD",
+    "price": 1.33162,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:26:50",
+    "timestamp_unix": 1772692010.8892488,
+    "symbol": "GBPUSD",
+    "price": 1.33162,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:28:06",
+    "timestamp_unix": 1772692086.0692713,
+    "symbol": "GBPUSD",
+    "price": 1.33162,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:29:16",
+    "timestamp_unix": 1772692156.2431219,
+    "symbol": "GBPUSD",
+    "price": 1.33162,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:30:26",
+    "timestamp_unix": 1772692226.424993,
+    "symbol": "GBPUSD",
+    "price": 1.33162,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:31:46",
+    "timestamp_unix": 1772692306.811182,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.332389375,
+        "distance_pct": 0.02097236714686337
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231,
+        "distance_pct": 0.015013775138704763
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052,
+        "distance_pct": 0.04282829496063612
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:32:58",
+    "timestamp_unix": 1772692378.2643754,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:34:08",
+    "timestamp_unix": 1772692448.4301078,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:35:24",
+    "timestamp_unix": 1772692524.6269784,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:36:34",
+    "timestamp_unix": 1772692594.831103,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:37:45",
+    "timestamp_unix": 1772692665.0655074,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:39:01",
+    "timestamp_unix": 1772692741.3995562,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:40:11",
+    "timestamp_unix": 1772692811.6273873,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:41:21",
+    "timestamp_unix": 1772692881.8479135,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:42:40",
+    "timestamp_unix": 1772692960.1448455,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:43:50",
+    "timestamp_unix": 1772693030.3928223,
+    "symbol": "GBPUSD",
+    "price": 1.33211,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:45:25",
+    "timestamp_unix": 1772693125.7883468,
+    "symbol": "GBPUSD",
+    "price": 1.33237,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.332389375,
+        "distance_pct": 0.001454175641896218
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231,
+        "distance_pct": 0.004503253600722696
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052,
+        "distance_pct": 0.0233058384682919
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:46:39",
+    "timestamp_unix": 1772693199.7176876,
+    "symbol": "GBPUSD",
+    "price": 1.33237,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:47:50",
+    "timestamp_unix": 1772693270.0327382,
+    "symbol": "GBPUSD",
+    "price": 1.33237,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:49:11",
+    "timestamp_unix": 1772693351.8546507,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.33209125,
+        "distance_pct": 0.01641885146851381
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:50:26",
+    "timestamp_unix": 1772693426.0813794,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:51:42",
+    "timestamp_unix": 1772693502.5125961,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:53:03",
+    "timestamp_unix": 1772693583.6673565,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:54:14",
+    "timestamp_unix": 1772693654.138433,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:55:24",
+    "timestamp_unix": 1772693724.316981,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:56:45",
+    "timestamp_unix": 1772693805.4264967,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:57:55",
+    "timestamp_unix": 1772693875.9158165,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:59:06",
+    "timestamp_unix": 1772693946.442639,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 15:00:26",
+    "timestamp_unix": 1772694026.9442217,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231,
+        "distance_pct": 0.0
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052,
+        "distance_pct": 0.027810344439351934
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:01:42",
+    "timestamp_unix": 1772694102.571011,
+    "symbol": "GBPUSD",
+    "price": 1.33231,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 15:19:51",
+    "timestamp_unix": 1772695191.8653889,
+    "symbol": "GBPUSD",
+    "price": 1.33348,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.029996700362956773
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.3337089909418136,
+        "distance_pct": 0.017172431668537328
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231,
+        "distance_pct": 0.08774034856165022
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052,
+        "distance_pct": 0.05995440501544557
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:31:25",
+    "timestamp_unix": 1772695885.5985425,
+    "symbol": "GBPUSD",
+    "price": 1.33415,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 1.3333039999999998,
+        "distance_pct": 0.06341116066410257
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.33284,
+        "distance_pct": 0.09818985871153336
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.33424,
+        "distance_pct": 0.0067458681557655085
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.020237604467263238
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.020237604467263238
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:34:10",
+    "timestamp_unix": 1772696050.4367926,
+    "symbol": "GBPUSD",
+    "price": 1.33444,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.04196516890981355
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.04196516890981355
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:41:05",
+    "timestamp_unix": 1772696465.2083743,
+    "symbol": "GBPUSD",
+    "price": 1.33444,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.04196516890981355
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.04196516890981355
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:46:19",
+    "timestamp_unix": 1772696779.939284,
+    "symbol": "GBPUSD",
+    "price": 1.33444,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.04196516890981355
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.04196516890981355
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:51:34",
+    "timestamp_unix": 1772697094.6649723,
+    "symbol": "GBPUSD",
+    "price": 1.33465,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.05769302813471228
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.05769302813471228
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:56:47",
+    "timestamp_unix": 1772697407.7138894,
+    "symbol": "GBPUSD",
+    "price": 1.33465,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.05769302813471228
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.05769302813471228
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:02:02",
+    "timestamp_unix": 1772697722.4391124,
+    "symbol": "GBPUSD",
+    "price": 1.33405,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.3329,
+        "distance_pct": 0.08620366552977657
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.012743150556576103
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.012743150556576103
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:07:15",
+    "timestamp_unix": 1772698035.6090136,
+    "symbol": "GBPUSD",
+    "price": 1.33405,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.3329,
+        "distance_pct": 0.08620366552977657
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.012743150556576103
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.012743150556576103
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:12:28",
+    "timestamp_unix": 1772698348.4104152,
+    "symbol": "GBPUSD",
+    "price": 1.33405,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.3329,
+        "distance_pct": 0.08620366552977657
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.012743150556576103
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.012743150556576103
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:17:43",
+    "timestamp_unix": 1772698663.5115638,
+    "symbol": "GBPUSD",
+    "price": 1.33251,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.3336797804895033,
+        "distance_pct": 0.08778774564567807
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231,
+        "distance_pct": 0.015009268223126128
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052,
+        "distance_pct": 0.012796902087035131
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:23:17",
+    "timestamp_unix": 1772698997.588448,
+    "symbol": "GBPUSD",
+    "price": 1.33251,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:28:30",
+    "timestamp_unix": 1772699310.7030883,
+    "symbol": "GBPUSD",
+    "price": 1.33251,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:33:44",
+    "timestamp_unix": 1772699624.0290751,
+    "symbol": "GBPUSD",
+    "price": 1.33202,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33231,
+        "distance_pct": 0.021771444873209374
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.33268052,
+        "distance_pct": 0.04958784402636997
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:38:58",
+    "timestamp_unix": 1772699938.6468644,
+    "symbol": "GBPUSD",
+    "price": 1.33202,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:44:12",
+    "timestamp_unix": 1772700252.4983282,
+    "symbol": "GBPUSD",
+    "price": 1.33202,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 16:49:28",
+    "timestamp_unix": 1772700568.5600412,
+    "symbol": "GBPUSD",
+    "price": 1.33263,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 1.33388,
+        "distance_pct": 0.09379947922528935
+      },
+      {
+        "name": "EMA20",
+        "type": "resistance",
+        "value": 1.333400468186189,
+        "distance_pct": 0.05781561169935304
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.3327399999999998,
+        "distance_pct": 0.008254354171813066
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 1.3330090399999999,
+        "distance_pct": 0.028443003684435
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:54:45",
+    "timestamp_unix": 1772700885.5024421,
+    "symbol": "GBPUSD",
+    "price": 1.33263,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 17:00:00",
+    "timestamp_unix": 1772701200.0907502,
+    "symbol": "GBPUSD",
+    "price": 1.33263,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 17:29:50",
+    "timestamp_unix": 1772702990.8989387,
+    "symbol": "GBPUSD",
+    "price": 1.33616,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 1.33643,
+        "distance_pct": 0.02020716081906302
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:35:04",
+    "timestamp_unix": 1772703304.0870557,
+    "symbol": "GBPUSD",
+    "price": 1.33598,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.33644,
+        "distance_pct": 0.03443165316847011
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:55:47",
+    "timestamp_unix": 1772704547.6636589,
+    "symbol": "GBPUSD",
+    "price": 1.33485,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.334585,
+        "distance_pct": 0.019852417874681182
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 1.33388054,
+        "distance_pct": 0.07262688691613953
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:56:50",
+    "timestamp_unix": 1772704610.4139533,
+    "symbol": "GBPUSD",
+    "price": 1.33485,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.334585,
+        "distance_pct": 0.019852417874681182
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 1.33388054,
+        "distance_pct": 0.07262688691613953
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:02:03",
+    "timestamp_unix": 1772704923.5183434,
+    "symbol": "GBPUSD",
+    "price": 1.33539,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.33644,
+        "distance_pct": 0.07862871520679317
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.334585,
+        "distance_pct": 0.06028201499188752
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:07:21",
+    "timestamp_unix": 1772705241.6842828,
+    "symbol": "GBPUSD",
+    "price": 1.33539,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.33644,
+        "distance_pct": 0.07862871520679317
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.334585,
+        "distance_pct": 0.06028201499188752
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:12:36",
+    "timestamp_unix": 1772705556.6859548,
+    "symbol": "GBPUSD",
+    "price": 1.33539,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 7,
+      "resistance_levels_count": 3,
+      "near_levels_count": 2,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.33644,
+        "distance_pct": 0.07862871520679317
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 1.334585,
+        "distance_pct": 0.06028201499188752
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:17:52",
+    "timestamp_unix": 1772705872.6935,
+    "symbol": "GBPUSD",
+    "price": 1.33501,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 6,
+      "resistance_levels_count": 5,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 1.3354266666666668,
+        "distance_pct": 0.03121075247876284
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.33447,
+        "distance_pct": 0.04044913521246919
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 1.33447,
+        "distance_pct": 0.04044913521246919
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33602,
+        "distance_pct": 0.07565486400850595
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:23:08",
+    "timestamp_unix": 1772706188.1738188,
+    "symbol": "GBPUSD",
+    "price": 1.33501,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 6,
+      "resistance_levels_count": 5,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 1.3354266666666668,
+        "distance_pct": 0.03121075247876284
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 1.33447,
+        "distance_pct": 0.04044913521246919
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 1.33447,
+        "distance_pct": 0.04044913521246919
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 1.33602,
+        "distance_pct": 0.07565486400850595
+      }
+    ]
   }
 ]

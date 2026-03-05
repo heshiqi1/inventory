@@ -103,5 +103,2983 @@
       "has_opportunity": false
     },
     "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 14:24:20",
+    "timestamp_unix": 1772691860.3296285,
+    "symbol": "USDJPY",
+    "price": 157.24433,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.10685142857142,
+        "distance_pct": 0.08742990696616759
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16543454545453,
+        "distance_pct": 0.05017379930040091
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09682384096137578
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.08661043612828466
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.07538708708923508
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:25:32",
+    "timestamp_unix": 1772691932.594513,
+    "symbol": "USDJPY",
+    "price": 157.24433,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.10685142857142,
+        "distance_pct": 0.08742990696616759
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16543454545453,
+        "distance_pct": 0.05017379930040091
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09682384096137578
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.08661043612828466
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.07538708708923508
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:26:42",
+    "timestamp_unix": 1772692002.758832,
+    "symbol": "USDJPY",
+    "price": 157.24433,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.10685142857142,
+        "distance_pct": 0.08742990696616759
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16543454545453,
+        "distance_pct": 0.05017379930040091
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09682384096137578
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.08661043612828466
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.07538708708923508
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:27:53",
+    "timestamp_unix": 1772692073.915263,
+    "symbol": "USDJPY",
+    "price": 157.24433,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.10685142857142,
+        "distance_pct": 0.08742990696616759
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16543454545453,
+        "distance_pct": 0.05017379930040091
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09682384096137578
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.08661043612828466
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.07538708708923508
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:29:08",
+    "timestamp_unix": 1772692148.1014595,
+    "symbol": "USDJPY",
+    "price": 157.24433,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.10685142857142,
+        "distance_pct": 0.08742990696616759
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16543454545453,
+        "distance_pct": 0.05017379930040091
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09682384096137578
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.08661043612828466
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.07538708708923508
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:30:18",
+    "timestamp_unix": 1772692218.2840438,
+    "symbol": "USDJPY",
+    "price": 157.24433,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.10685142857142,
+        "distance_pct": 0.08742990696616759
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16543454545453,
+        "distance_pct": 0.05017379930040091
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09682384096137578
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.08661043612828466
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.07538708708923508
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:31:29",
+    "timestamp_unix": 1772692289.603706,
+    "symbol": "USDJPY",
+    "price": 157.24433,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.10685142857142,
+        "distance_pct": 0.08742990696616759
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16543454545453,
+        "distance_pct": 0.05017379930040091
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09682384096137578
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.08661043612828466
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.07538708708923508
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:32:50",
+    "timestamp_unix": 1772692370.1224358,
+    "symbol": "USDJPY",
+    "price": 157.24433,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.10685142857142,
+        "distance_pct": 0.08742990696616759
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16543454545453,
+        "distance_pct": 0.05017379930040091
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09682384096137578
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.08661043612828466
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.07538708708923508
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:34:00",
+    "timestamp_unix": 1772692440.2968552,
+    "symbol": "USDJPY",
+    "price": 157.24433,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.10685142857142,
+        "distance_pct": 0.08742990696616759
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16543454545453,
+        "distance_pct": 0.05017379930040091
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09682384096137578
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.03905387240353601
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.08661043612828466
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.07538708708923508
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:35:11",
+    "timestamp_unix": 1772692511.6665993,
+    "symbol": "USDJPY",
+    "price": 157.16711,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.02665043232374795
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.003291111896484165
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.047738995773351146
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.010059356566388265
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.0851005022615867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.037520572847599215
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.02629170950588928
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:36:26",
+    "timestamp_unix": 1772692586.662817,
+    "symbol": "USDJPY",
+    "price": 157.16711,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.02665043232374795
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.003291111896484165
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.047738995773351146
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.010059356566388265
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.0851005022615867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.037520572847599215
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.02629170950588928
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:37:36",
+    "timestamp_unix": 1772692656.871331,
+    "symbol": "USDJPY",
+    "price": 157.16711,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.02665043232374795
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.003291111896484165
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.047738995773351146
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.010059356566388265
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.0851005022615867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.037520572847599215
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.02629170950588928
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:38:48",
+    "timestamp_unix": 1772692728.487322,
+    "symbol": "USDJPY",
+    "price": 157.16711,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.02665043232374795
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.003291111896484165
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.047738995773351146
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.010059356566388265
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.0851005022615867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.037520572847599215
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.02629170950588928
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:40:03",
+    "timestamp_unix": 1772692803.448557,
+    "symbol": "USDJPY",
+    "price": 157.16711,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.02665043232374795
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.003291111896484165
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.047738995773351146
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.010059356566388265
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.0851005022615867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.037520572847599215
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.02629170950588928
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:41:13",
+    "timestamp_unix": 1772692873.6673076,
+    "symbol": "USDJPY",
+    "price": 157.16711,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.02665043232374795
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.003291111896484165
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.047738995773351146
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.010059356566388265
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.0851005022615867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.037520572847599215
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.02629170950588928
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:42:26",
+    "timestamp_unix": 1772692946.1865299,
+    "symbol": "USDJPY",
+    "price": 157.16711,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.02665043232374795
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.003291111896484165
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.047738995773351146
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.010059356566388265
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.0851005022615867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.037520572847599215
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.02629170950588928
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:43:42",
+    "timestamp_unix": 1772693022.2107286,
+    "symbol": "USDJPY",
+    "price": 157.16711,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.02665043232374795
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.003291111896484165
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.047738995773351146
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.010059356566388265
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.0851005022615867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.037520572847599215
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.02629170950588928
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:45:13",
+    "timestamp_unix": 1772693113.6984665,
+    "symbol": "USDJPY",
+    "price": 157.08852,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.023365352041179836
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.04673635893027024
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.0022662381694229126
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.06009350651467553
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.035113959950734
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.012489773281970765
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.023724254324897994
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:46:31",
+    "timestamp_unix": 1772693191.4925022,
+    "symbol": "USDJPY",
+    "price": 157.08852,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.023365352041179836
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.04673635893027024
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.0022662381694229126
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.06009350651467553
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.035113959950734
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.012489773281970765
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.023724254324897994
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:47:41",
+    "timestamp_unix": 1772693261.7630994,
+    "symbol": "USDJPY",
+    "price": 157.08852,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 7,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.12522428571427,
+        "distance_pct": 0.023365352041179836
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.16193745454544,
+        "distance_pct": 0.04673635893027024
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.0022662381694229126
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.18292,
+        "distance_pct": 0.06009350651467553
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.035113959950734
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.10814,
+        "distance_pct": 0.012489773281970765
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.12578808,
+        "distance_pct": 0.023724254324897994
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:48:53",
+    "timestamp_unix": 1772693333.483512,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:50:17",
+    "timestamp_unix": 1772693417.7739036,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:51:34",
+    "timestamp_unix": 1772693494.2444618,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:52:46",
+    "timestamp_unix": 1772693566.7482104,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:54:05",
+    "timestamp_unix": 1772693645.784562,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:55:16",
+    "timestamp_unix": 1772693716.175887,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:56:28",
+    "timestamp_unix": 1772693788.6046426,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:57:47",
+    "timestamp_unix": 1772693867.5266001,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 14:58:58",
+    "timestamp_unix": 1772693938.0214949,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:00:10",
+    "timestamp_unix": 1772694010.585013,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:01:34",
+    "timestamp_unix": 1772694094.1684692,
+    "symbol": "USDJPY",
+    "price": 157.0625,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.14359714285712,
+        "distance_pct": 0.05163367631173443
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.018833267011546317
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.018553123756474256
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.050234779148412886
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.03400083406286988
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:19:43",
+    "timestamp_unix": 1772695183.357555,
+    "symbol": "USDJPY",
+    "price": 157.07588,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.01482692307692,
+        "distance_pct": 0.03886852451381313
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.010313486704640948
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.00015,
+        "distance_pct": 0.048212367169307845
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.124795,
+        "distance_pct": 0.0311410001331801
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.15421121999998,
+        "distance_pct": 0.04986839481654794
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:31:19",
+    "timestamp_unix": 1772695879.4530957,
+    "symbol": "USDJPY",
+    "price": 157.03716,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 9,
+      "support_levels_count": 3,
+      "resistance_levels_count": 5,
+      "near_levels_count": 8,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.04111000000003,
+        "distance_pct": 0.0025153282191499454
+      },
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.06665999999998,
+        "distance_pct": 0.018785362649187325
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 157.00015,
+        "distance_pct": 0.023567670225320754
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.15783,
+        "distance_pct": 0.0768416851145231
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.1229,
+        "distance_pct": 0.05459854215396346
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.02063,
+        "distance_pct": 0.010526171003085404
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.071765,
+        "distance_pct": 0.02203618557543903
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.08383286,
+        "distance_pct": 0.029720901727973835
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:33:55",
+    "timestamp_unix": 1772696035.885632,
+    "symbol": "USDJPY",
+    "price": 157.07283,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.19871571428567,
+        "distance_pct": 0.08014480562020715
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.01225546136782507
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.025128470659134847
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.043654908363187694
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.02742203091392993
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:39:32",
+    "timestamp_unix": 1772696372.0267763,
+    "symbol": "USDJPY",
+    "price": 157.07283,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.19871571428567,
+        "distance_pct": 0.08014480562020715
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.01225546136782507
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.025128470659134847
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.043654908363187694
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.02742203091392993
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:46:08",
+    "timestamp_unix": 1772696768.775982,
+    "symbol": "USDJPY",
+    "price": 157.07283,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.19871571428567,
+        "distance_pct": 0.08014480562020715
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.01225546136782507
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 157.03336,
+        "distance_pct": 0.025128470659134847
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.14139999999998,
+        "distance_pct": 0.043654908363187694
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.11590256,
+        "distance_pct": 0.02742203091392993
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:51:23",
+    "timestamp_unix": 1772697083.1510563,
+    "symbol": "USDJPY",
+    "price": 157.19144,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 6,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.23685799999998,
+        "distance_pct": 0.028893430838208334
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.06320954881512005
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.03689768348708602
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.03689768348708602
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.114485,
+        "distance_pct": 0.04895622815084467
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.14633438,
+        "distance_pct": 0.028694705004284494
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 15:56:37",
+    "timestamp_unix": 1772697397.9344323,
+    "symbol": "USDJPY",
+    "price": 157.19144,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 6,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.23685799999998,
+        "distance_pct": 0.028893430838208334
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.06320954881512005
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.03689768348708602
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.03689768348708602
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.114485,
+        "distance_pct": 0.04895622815084467
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.14633438,
+        "distance_pct": 0.028694705004284494
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:01:50",
+    "timestamp_unix": 1772697710.917828,
+    "symbol": "USDJPY",
+    "price": 157.26467,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 6,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.234761,
+        "distance_pct": 0.01901825756541728
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.009684311167919991
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.009684311167919991
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.009684311167919991
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.114485,
+        "distance_pct": 0.09549824509217064
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.14633438,
+        "distance_pct": 0.07524615668603896
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:07:05",
+    "timestamp_unix": 1772698025.7390964,
+    "symbol": "USDJPY",
+    "price": 157.26467,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 6,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.234761,
+        "distance_pct": 0.01901825756541728
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.009684311167919991
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.009684311167919991
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.009684311167919991
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.114485,
+        "distance_pct": 0.09549824509217064
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.14633438,
+        "distance_pct": 0.07524615668603896
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:12:18",
+    "timestamp_unix": 1772698338.8196373,
+    "symbol": "USDJPY",
+    "price": 157.26467,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 6,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.234761,
+        "distance_pct": 0.01901825756541728
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.009684311167919991
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.009684311167919991
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.009684311167919991
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.114485,
+        "distance_pct": 0.09549824509217064
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.14633438,
+        "distance_pct": 0.07524615668603896
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:17:31",
+    "timestamp_unix": 1772698651.7683406,
+    "symbol": "USDJPY",
+    "price": 157.34096,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.232664,
+        "distance_pct": 0.06882886693966767
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.058166671920650996
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.058166671920650996
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.058166671920650996
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:22:55",
+    "timestamp_unix": 1772698975.2612798,
+    "symbol": "USDJPY",
+    "price": 157.34096,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.232664,
+        "distance_pct": 0.06882886693966767
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.058166671920650996
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.058166671920650996
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.058166671920650996
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:28:20",
+    "timestamp_unix": 1772699300.8378398,
+    "symbol": "USDJPY",
+    "price": 157.34096,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 4,
+      "resistance_levels_count": 7,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.232664,
+        "distance_pct": 0.06882886693966767
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.058166671920650996
+      },
+      {
+        "name": "向上突破位",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.058166671920650996
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.058166671920650996
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:33:33",
+    "timestamp_unix": 1772699613.9104166,
+    "symbol": "USDJPY",
+    "price": 157.23595,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 6,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.38279914285712,
+        "distance_pct": 0.09339412701555926
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09149943126873505
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.00857946290272055
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.38447,
+        "distance_pct": 0.09445677022334312
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.18200000000002,
+        "distance_pct": 0.034311491742178665
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.13421708,
+        "distance_pct": 0.06470080156604723
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:38:49",
+    "timestamp_unix": 1772699929.0303178,
+    "symbol": "USDJPY",
+    "price": 157.23595,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 6,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.38279914285712,
+        "distance_pct": 0.09339412701555926
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09149943126873505
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.00857946290272055
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.38447,
+        "distance_pct": 0.09445677022334312
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.18200000000002,
+        "distance_pct": 0.034311491742178665
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.13421708,
+        "distance_pct": 0.06470080156604723
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:44:02",
+    "timestamp_unix": 1772700242.1929555,
+    "symbol": "USDJPY",
+    "price": 157.23595,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 6,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.38279914285712,
+        "distance_pct": 0.09339412701555926
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.09149943126873505
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.00857946290272055
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.38447,
+        "distance_pct": 0.09445677022334312
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.18200000000002,
+        "distance_pct": 0.034311491742178665
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.13421708,
+        "distance_pct": 0.06470080156604723
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:49:15",
+    "timestamp_unix": 1772700555.8338294,
+    "symbol": "USDJPY",
+    "price": 157.22636,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.38196371428572,
+        "distance_pct": 0.0989679556823155
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.08540552614713572
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.01467947232257562
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.18200000000002,
+        "distance_pct": 0.028214098450147482
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.13421708,
+        "distance_pct": 0.05860526186574972
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:54:34",
+    "timestamp_unix": 1772700874.6194148,
+    "symbol": "USDJPY",
+    "price": 157.22636,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.38196371428572,
+        "distance_pct": 0.0989679556823155
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.08540552614713572
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.01467947232257562
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.18200000000002,
+        "distance_pct": 0.028214098450147482
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.13421708,
+        "distance_pct": 0.05860526186574972
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 16:59:49",
+    "timestamp_unix": 1772701189.0781343,
+    "symbol": "USDJPY",
+    "price": 157.22636,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.38196371428572,
+        "distance_pct": 0.0989679556823155
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.08540552614713572
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.01467947232257562
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.18200000000002,
+        "distance_pct": 0.028214098450147482
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.13421708,
+        "distance_pct": 0.05860526186574972
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:29:40",
+    "timestamp_unix": 1772702980.1870773,
+    "symbol": "USDJPY",
+    "price": 156.9682,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 12,
+      "support_levels_count": 7,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.01941266666668,
+        "distance_pct": 0.03262614126089609
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 156.90475,
+        "distance_pct": 0.040422200165376745
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.07892044375868104
+      },
+      {
+        "name": "向下突破位",
+        "type": "support",
+        "value": 156.97953,
+        "distance_pct": 0.007218022503930836
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 156.97953,
+        "distance_pct": 0.007218022503930836
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:34:54",
+    "timestamp_unix": 1772703294.2681062,
+    "symbol": "USDJPY",
+    "price": 157.05391,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 6,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 157.02439800000002,
+        "distance_pct": 0.01879099985475221
+      },
+      {
+        "name": "水平支撑",
+        "type": "support",
+        "value": 156.90475,
+        "distance_pct": 0.0949737577370693
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.024303756589064245
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 156.97953,
+        "distance_pct": 0.04735953406062338
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.18200000000002,
+        "distance_pct": 0.08155798222407483
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "support",
+        "value": 157.13421708,
+        "distance_pct": 0.05113344838088489
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:55:41",
+    "timestamp_unix": 1772704541.4450693,
+    "symbol": "USDJPY",
+    "price": 157.18461,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.05886708628788928
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.04124449588289884
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.14646,
+        "distance_pct": 0.024270823969345143
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.20263036,
+        "distance_pct": 0.011464455712304403
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 17:56:44",
+    "timestamp_unix": 1772704604.2844543,
+    "symbol": "USDJPY",
+    "price": 157.19242,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.06383259447242338
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.03627401372152315
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.14646,
+        "distance_pct": 0.02923805104597791
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.20263036,
+        "distance_pct": 0.006495453152258921
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:01:53",
+    "timestamp_unix": 1772704913.683285,
+    "symbol": "USDJPY",
+    "price": 157.15046,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.0371491117493386
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.06298422543591867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.14646,
+        "distance_pct": 0.0025453313977058033
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.20263036,
+        "distance_pct": 0.03319771383423948
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:07:07",
+    "timestamp_unix": 1772705227.825639,
+    "symbol": "USDJPY",
+    "price": 157.15046,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.0371491117493386
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.06298422543591867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.14646,
+        "distance_pct": 0.0025453313977058033
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.20263036,
+        "distance_pct": 0.03319771383423948
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:12:24",
+    "timestamp_unix": 1772705544.974143,
+    "symbol": "USDJPY",
+    "price": 157.15046,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 4,
+      "resistance_levels_count": 6,
+      "near_levels_count": 4,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.0371491117493386
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.06298422543591867
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "resistance",
+        "value": 157.14646,
+        "distance_pct": 0.0025453313977058033
+      },
+      {
+        "name": "斐波那契0.618",
+        "type": "resistance",
+        "value": 157.20263036,
+        "distance_pct": 0.03319771383423948
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:17:39",
+    "timestamp_unix": 1772705859.948192,
+    "symbol": "USDJPY",
+    "price": 157.19591,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.14496714285715,
+        "distance_pct": 0.032407240839054254
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.06605133683184751
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.03405304883568216
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.19819,
+        "distance_pct": 0.0014504194161369468
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.05331999999999,
+        "distance_pct": 0.09070846690604906
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 18:22:56",
+    "timestamp_unix": 1772706176.6718528,
+    "symbol": "USDJPY",
+    "price": 157.19591,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 11,
+      "support_levels_count": 6,
+      "resistance_levels_count": 4,
+      "near_levels_count": 5,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "下降趋势线",
+        "type": "resistance",
+        "value": 157.14496714285715,
+        "distance_pct": 0.032407240839054254
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.09208,
+        "distance_pct": 0.06605133683184751
+      },
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 157.24944,
+        "distance_pct": 0.03405304883568216
+      },
+      {
+        "name": "最近高点",
+        "type": "resistance",
+        "value": 157.19819,
+        "distance_pct": 0.0014504194161369468
+      },
+      {
+        "name": "斐波那契0.5",
+        "type": "support",
+        "value": 157.05331999999999,
+        "distance_pct": 0.09070846690604906
+      }
+    ]
   }
 ]
