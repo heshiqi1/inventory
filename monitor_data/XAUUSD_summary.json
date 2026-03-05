@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp": "2026-03-05 08:34:11",
+    "timestamp_unix": 1772670851.3911974,
+    "symbol": "XAUUSD",
+    "price": 5172.11004,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5169.15497,
+        "distance_pct": 0.057134708603376466
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 08:35:21",
+    "timestamp_unix": 1772670921.5744655,
+    "symbol": "XAUUSD",
+    "price": 5172.11004,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5169.15497,
+        "distance_pct": 0.057134708603376466
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 08:36:34",
+    "timestamp_unix": 1772670994.9614303,
+    "symbol": "XAUUSD",
+    "price": 5172.11004,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5169.15497,
+        "distance_pct": 0.057134708603376466
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 08:37:47",
+    "timestamp_unix": 1772671067.2550652,
+    "symbol": "XAUUSD",
+    "price": 5172.11004,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5169.15497,
+        "distance_pct": 0.057134708603376466
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 08:38:57",
+    "timestamp_unix": 1772671137.4205294,
+    "symbol": "XAUUSD",
+    "price": 5172.11004,
+    "trend": "neutral",
+    "statistics": {
+      "total_levels": 14,
+      "support_levels_count": 7,
+      "resistance_levels_count": 6,
+      "near_levels_count": 1,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "水平阻力",
+        "type": "resistance",
+        "value": 5169.15497,
+        "distance_pct": 0.057134708603376466
+      }
+    ]
+  }
+]

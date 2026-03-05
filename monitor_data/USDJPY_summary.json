@@ -1,0 +1,107 @@
+[
+  {
+    "timestamp": "2026-03-05 08:32:50",
+    "timestamp_unix": 1772670770.8872747,
+    "symbol": "USDJPY",
+    "price": 156.81641,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:34:04",
+    "timestamp_unix": 1772670844.277951,
+    "symbol": "USDJPY",
+    "price": 156.81641,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:35:15",
+    "timestamp_unix": 1772670915.4719677,
+    "symbol": "USDJPY",
+    "price": 156.81641,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:36:26",
+    "timestamp_unix": 1772670986.7145298,
+    "symbol": "USDJPY",
+    "price": 156.81641,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:37:40",
+    "timestamp_unix": 1772671060.1183288,
+    "symbol": "USDJPY",
+    "price": 156.81641,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:38:51",
+    "timestamp_unix": 1772671131.3194504,
+    "symbol": "USDJPY",
+    "price": 156.81641,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:40:02",
+    "timestamp_unix": 1772671202.6123774,
+    "symbol": "USDJPY",
+    "price": 156.81641,
+    "trend": "bear",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 4,
+      "resistance_levels_count": 5,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  }
+]

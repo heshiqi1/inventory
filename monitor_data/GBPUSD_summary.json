@@ -1,0 +1,111 @@
+[
+  {
+    "timestamp": "2026-03-05 08:33:01",
+    "timestamp_unix": 1772670781.7042592,
+    "symbol": "GBPUSD",
+    "price": 1.33762,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 1.3366009523809526,
+        "distance_pct": 0.07618364102267274
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 1.33644,
+        "distance_pct": 0.08821638432439399
+      },
+      {
+        "name": "EMA20",
+        "type": "support",
+        "value": 1.3371318400761323,
+        "distance_pct": 0.03649466394549634
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 08:34:13",
+    "timestamp_unix": 1772670853.4283683,
+    "symbol": "GBPUSD",
+    "price": 1.33762,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:35:23",
+    "timestamp_unix": 1772670923.6090207,
+    "symbol": "GBPUSD",
+    "price": 1.33762,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:36:38",
+    "timestamp_unix": 1772670998.0743635,
+    "symbol": "GBPUSD",
+    "price": 1.33762,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:37:49",
+    "timestamp_unix": 1772671069.29221,
+    "symbol": "GBPUSD",
+    "price": 1.33762,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:38:59",
+    "timestamp_unix": 1772671139.4543793,
+    "symbol": "GBPUSD",
+    "price": 1.33762,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  }
+]

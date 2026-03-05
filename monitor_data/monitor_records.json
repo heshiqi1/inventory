@@ -1,0 +1,54 @@
+[
+  {
+    "timestamp": "2026-03-05 08:32:53",
+    "timestamp_unix": 1772670773.5461733,
+    "symbol": "EURUSD",
+    "price": 1.16413,
+    "trend": "bull",
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 1.1632075
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 1.16317
+      },
+      {
+        "name": "EMA20",
+        "type": "support",
+        "value": 1.1636723860654599
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  },
+  {
+    "timestamp": "2026-03-05 08:33:02",
+    "timestamp_unix": 1772670782.2425203,
+    "symbol": "GBPUSD",
+    "price": 1.33762,
+    "trend": "bull",
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 1.3366009523809526
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 1.33644
+      },
+      {
+        "name": "EMA20",
+        "type": "support",
+        "value": 1.3371318400761323
+      }
+    ],
+    "reversal_pattern": null,
+    "has_opportunity": true
+  }
+]

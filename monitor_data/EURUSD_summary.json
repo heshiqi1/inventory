@@ -1,0 +1,126 @@
+[
+  {
+    "timestamp": "2026-03-05 08:32:52",
+    "timestamp_unix": 1772670772.9281719,
+    "symbol": "EURUSD",
+    "price": 1.16413,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 3,
+      "has_opportunity": true
+    },
+    "near_levels": [
+      {
+        "name": "上升趋势线",
+        "type": "support",
+        "value": 1.1632075,
+        "distance_pct": 0.07924372707516852
+      },
+      {
+        "name": "最近低点",
+        "type": "support",
+        "value": 1.16317,
+        "distance_pct": 0.08246501679366323
+      },
+      {
+        "name": "EMA20",
+        "type": "support",
+        "value": 1.1636723860654599,
+        "distance_pct": 0.039309521663409265
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-05 08:34:06",
+    "timestamp_unix": 1772670846.307353,
+    "symbol": "EURUSD",
+    "price": 1.16413,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:35:17",
+    "timestamp_unix": 1772670917.499381,
+    "symbol": "EURUSD",
+    "price": 1.16413,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:36:29",
+    "timestamp_unix": 1772670989.811837,
+    "symbol": "EURUSD",
+    "price": 1.16413,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:37:42",
+    "timestamp_unix": 1772671062.1632288,
+    "symbol": "EURUSD",
+    "price": 1.16413,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:38:53",
+    "timestamp_unix": 1772671133.3529963,
+    "symbol": "EURUSD",
+    "price": 1.16413,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  },
+  {
+    "timestamp": "2026-03-05 08:40:05",
+    "timestamp_unix": 1772671205.7866735,
+    "symbol": "EURUSD",
+    "price": 1.16413,
+    "trend": "bull",
+    "statistics": {
+      "total_levels": 10,
+      "support_levels_count": 3,
+      "resistance_levels_count": 6,
+      "near_levels_count": 0,
+      "has_opportunity": false
+    },
+    "near_levels": []
+  }
+]
